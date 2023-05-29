@@ -20,13 +20,15 @@ public class Dashboard03StepDefinitions {
 
     @Then("dashboard da bulunan paket bilgisi butonuna tıklar")
     public void dashboard_da_bulunan_paket_bilgisi_butonuna_tıklar() {
+
         members_page.dashboardpaketbilgisi.click();
+        ResuableMethods.waitFor(3);
     }
 
     @Then("fatura bilgileri sekmesine tıklar")
     public void fatura_bilgileri_sekmesine_tıklar() {
         members_page.faturaBilgisi.click();
-        ResuableMethods.waitFor(2);
+        ResuableMethods.waitFor(3);
     }
 
     @Then("buradaki bilgileri doldurur ve onayla sekmesine tıklar.")

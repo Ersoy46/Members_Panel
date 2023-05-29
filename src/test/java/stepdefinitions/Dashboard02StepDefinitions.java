@@ -16,12 +16,12 @@ public class Dashboard02StepDefinitions {
     @Then("dashboard da bulunan entegrasyon butonuna tıklar")
     public void dashboard_da_bulunan_entegraasyon_butonuna_tıklar() {
        members_page.dashboardentegrasyon.click();
-       ResuableMethods.waitFor(2);
+       ResuableMethods.waitFor(3);
     }
     @Then("sayfayı aşagı kaydırır entegrasyon videosunun çalıştığını teyit eder.")
     public void sayfayı_aşagı_kaydırır_entegrasyon_videosunun_çalıştığını_teyit_eder() {
 
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(Driver.getDriver());
 
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ResuableMethods.waitFor(8);

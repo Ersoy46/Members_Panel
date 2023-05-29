@@ -23,6 +23,8 @@ public class Dashboard01StepDefinitions {
     @Given("kullanıcı members.rexven.com sayfasına gider")
     public void kullanıcı_members_rexven_com_sayfasına_gider() {
         Driver.getDriver().get(ConfigReader.getProperty("Members.rexvenURL"));
+        ResuableMethods.waitFor(3);
+
 
 
     }
@@ -59,14 +61,16 @@ public class Dashboard01StepDefinitions {
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ResuableMethods.waitFor(2);
 
-        actions.sendKeys(Keys.PAGE_UP).sendKeys(Keys.PAGE_UP).sendKeys(Keys.PAGE_UP).perform();
-        ResuableMethods.waitFor(2);
+        actions.sendKeys(Keys.PAGE_UP)
+                .sendKeys(Keys.PAGE_UP)
+                .sendKeys(Keys.PAGE_UP).perform();
+        ResuableMethods.waitFor(3);
     }
 
     @Then("dashboard da bulunan profil butonuna tıklar")
     public void dashboard_da_bulunan_profil_butonuna_tıklar() {
         members_page.dashboardprofilbutonu.click();
-        ResuableMethods.waitFor(2);
+        ResuableMethods.waitFor(3);
 
     }
 

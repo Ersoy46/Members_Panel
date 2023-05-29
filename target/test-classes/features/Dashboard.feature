@@ -33,7 +33,7 @@ Feature: Members Home Page
     And  sayfayı küçülterek ekran kaydı alır
     And sayfayı kapatır.
 
-@tc04
+
     Scenario: TC04
       Given kullanıcı members.rexven.com sayfasına gider
       Then  geçerli mail adresi girer
@@ -42,7 +42,7 @@ Feature: Members Home Page
       And yeni açılan pencereye gider ve  hayır,teşekkürler sekmesine tıklar
       And sayfayı kapatır.
 
-  @tc05
+
   Scenario: TC05
     Given kullanıcı members.rexven.com sayfasına gider
     Then  geçerli mail adresi girer

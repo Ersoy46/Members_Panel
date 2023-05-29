@@ -1,8 +1,10 @@
 stepdefinitions\Dashboard01StepDefinitions.class
+stepdefinitions\Dashboard05StepDefinitions.class
 stepdefinitions\Hooks.class
 stepdefinitions\Dashboard02StepDefinitions.class
 runners\Runner.class
 utilities\Driver.class
+stepdefinitions\Dashboard04StepDefinitions.class
 stepdefinitions\Dashboard03StepDefinitions.class
 utilities\ResuableMethods.class
 utilities\ResuableMethods$2.class
