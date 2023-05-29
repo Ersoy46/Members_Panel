@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import javax.xml.xpath.XPath;
 import java.security.PublicKey;
 
 public class Members_Page {
@@ -33,5 +34,20 @@ public  WebElement girişyap;
 
     @FindBy(xpath = "//div[@class='flex flex-1 justify-end gap-x-3']/button[@class='rounded-md bg-headerPrimary py-2.5 px-8 text-xs font-semibold text-white shadow-sm hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 md:text-sm']")
     public  WebElement profilOnayla;
+
+    @FindBy(xpath = "//a[@class='bg-white rounded-md shadow-md w-full pt-6 ']")
+    public WebElement dashboardentegrasyon;
+
+    @FindBy(xpath = "//a[@class='bg-white rounded-md shadow-md w-full min-h-full pt-6'][1]")
+    public WebElement dashboardpaketbilgisi;
+
+    @FindBy(xpath = "//button[@id='updateBtn']")
+    public WebElement faturaBilgisi;
+
+    @FindBy(xpath = "//a[@class='bg-white rounded-md shadow-md w-full min-h-full pt-6'][2]")
+    public WebElement dashboarddiscord;
+
+
+
 
 }

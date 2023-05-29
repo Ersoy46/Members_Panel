@@ -6,7 +6,6 @@ Feature: Members Home Page
     Given kullanıcı members.rexven.com sayfasına gider
     Then  geçerli mail adresi girer
     And  geçerli password girer
-  #  And  Giriş yap sekmesine tıklar
     And  dashboard sayfasını aşagı-yukarı kaydırır tüm sayfayı görür
     And dashboard da bulunan profil butonuna tıklar
     When Ad Soyad bölümüne gerekli bilgileri girer

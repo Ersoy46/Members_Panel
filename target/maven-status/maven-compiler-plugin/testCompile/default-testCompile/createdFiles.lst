@@ -1,9 +1,11 @@
 stepdefinitions\Dashboard01StepDefinitions.class
-utilities\ResuableMethods.class
 stepdefinitions\Hooks.class
-utilities\ResuableMethods$2.class
-utilities\ConfigReader.class
+stepdefinitions\Dashboard02StepDefinitions.class
 runners\Runner.class
 utilities\Driver.class
+stepdefinitions\Dashboard03StepDefinitions.class
+utilities\ResuableMethods.class
+utilities\ResuableMethods$2.class
+utilities\ConfigReader.class
 utilities\ResuableMethods$1.class
 pages\Members_Page.class

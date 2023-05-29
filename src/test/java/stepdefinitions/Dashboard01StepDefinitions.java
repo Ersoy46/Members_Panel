@@ -51,15 +51,17 @@ public class Dashboard01StepDefinitions {
     @Then("dashboard sayfasını aşagı-yukarı kaydırır tüm sayfayı görür")
     public void dashboard_sayfasını_aşagı_kaydırır_tüm_sayfayı_görür() throws InterruptedException {
 
-Actions actions =new Actions(driver);
-actions.sendKeys(Keys.PAGE_DOWN)
-        .sendKeys(Keys.PAGE_DOWN)
-        .sendKeys(Keys.PAGE_DOWN).perform();
-ResuableMethods.waitFor(2);
+        Actions actions = new Actions(driver);
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ResuableMethods.waitFor(2);
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ResuableMethods.waitFor(2);
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ResuableMethods.waitFor(2);
 
-actions.sendKeys(Keys.PAGE_UP)
-        .sendKeys(Keys.PAGE_UP)
-        .sendKeys(Keys.PAGE_UP).perform();
+        actions.sendKeys(Keys.PAGE_UP)
+                .sendKeys(Keys.PAGE_UP)
+                .sendKeys(Keys.PAGE_UP).perform();
         ResuableMethods.waitFor(2);
     }
 
