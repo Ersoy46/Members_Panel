@@ -47,6 +47,10 @@ public  WebElement girişyap;
     @FindBy(xpath = "//a[@class='bg-white rounded-md shadow-md w-full min-h-full pt-6'][2]")
     public WebElement dashboarddiscord;
 
+    @FindBy(css = ".px-8")
+    public WebElement dashboardindirimlerikesfet;
+
+
 
 
 

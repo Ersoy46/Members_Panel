@@ -33,4 +33,23 @@ Feature: Members Home Page
     And  sayfayı küçülterek ekran kaydı alır
     And sayfayı kapatır.
 
+@tc04
+    Scenario: TC04
+      Given kullanıcı members.rexven.com sayfasına gider
+      Then  geçerli mail adresi girer
+      And  geçerli password girer
+      And dashboard da bulunan discord sekmesine tıklar
+      And yeni açılan pencereye gider ve  hayır,teşekkürler sekmesine tıklar
+      And sayfayı kapatır.
+
+  @tc05
+  Scenario: TC05
+    Given kullanıcı members.rexven.com sayfasına gider
+    Then  geçerli mail adresi girer
+    And  geçerli password girer
+    And dashboard da bulunan indirimleri keşfet sekmesine tıklar
+    And  sayfayı aşagı kaydırır ve tüm hizmet saglayıcıları görür
+    Then indirim al butonuna tıklar ve tamam sekmesine tıklar
+    Then sayfayı kapatır.
+
 
