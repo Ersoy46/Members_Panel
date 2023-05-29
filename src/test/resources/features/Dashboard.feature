@@ -1,4 +1,4 @@
-@TC01
+@smoke
 Feature: Members Home Page
 
 
@@ -32,3 +32,5 @@ Feature: Members Home Page
     Then buradaki bilgileri doldurur ve onayla sekmesine tıklar.
     And  sayfayı küçülterek ekran kaydı alır
     And sayfayı kapatır.
+
+

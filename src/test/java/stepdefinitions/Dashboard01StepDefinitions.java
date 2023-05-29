@@ -59,9 +59,7 @@ public class Dashboard01StepDefinitions {
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ResuableMethods.waitFor(2);
 
-        actions.sendKeys(Keys.PAGE_UP)
-                .sendKeys(Keys.PAGE_UP)
-                .sendKeys(Keys.PAGE_UP).perform();
+        actions.sendKeys(Keys.PAGE_UP).sendKeys(Keys.PAGE_UP).sendKeys(Keys.PAGE_UP).perform();
         ResuableMethods.waitFor(2);
     }
 
@@ -81,7 +79,7 @@ public class Dashboard01StepDefinitions {
         members_page.profilSoyad.clear();
         ResuableMethods.waitFor(2);
         members_page.profilSoyad.sendKeys("Test Deneme" + Keys.ENTER);
-
+        ResuableMethods.waitFor(1);
 
     }
 
