@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="18.071" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Members Home Page" name="TC01" time="17.977">
+<system-out><![CDATA[
+Given kullanıcı members.rexven.com sayfasına gider..........................passed
+Then geçerli mail adresi girer..............................................passed
+And geçerli password girer..................................................passed
+And dashboard sayfasını aşagı-yukarı kaydırır tüm sayfayı görür.............passed
+And dashboard da bulunan profil butonuna tıklar.............................passed
+When Ad Soyad bölümüne gerekli bilgileri girer..............................passed
+Then Onayla der ve sayfayı kapatır..........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
