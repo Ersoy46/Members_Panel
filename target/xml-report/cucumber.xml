@@ -1,100 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="150.896" tests="5" skipped="0" failures="1" errors="0">
-<testcase classname="Members Home Page" name="TC01" time="30.972">
+<testsuite name="Cucumber" time="47.295" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Üretici ve Toptancılar" name="TC09" time="47.08">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then geçerli mail adresi girer..............................................passed
 And geçerli password girer..................................................passed
-And dashboard sayfasını aşagı-yukarı kaydırır tüm sayfayı görür.............passed
-And dashboard da bulunan profil butonuna tıklar.............................passed
-When Ad Soyad bölümüne gerekli bilgileri girer..............................passed
-Then Onayla der ve sayfayı kapatır..........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Members Home Page" name="TC02" time="33.425">
-<system-out><![CDATA[
-Given kullanıcı members.rexven.com sayfasına gider..........................passed
-Then geçerli mail adresi girer..............................................passed
-And geçerli password girer..................................................passed
-And dashboard sayfasını aşagı-yukarı kaydırır tüm sayfayı görür.............passed
-And dashboard da bulunan entegrasyon butonuna tıklar........................passed
-And sayfayı aşagı kaydırır entegrasyon videosunun çalıştığını teyit eder....passed
-Then sayfayı kapatır........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Members Home Page" name="TC03" time="48.527">
-<system-out><![CDATA[
-Given kullanıcı members.rexven.com sayfasına gider..........................passed
-Then geçerli mail adresi girer..............................................passed
-And geçerli password girer..................................................passed
-And dashboard sayfasını aşagı-yukarı kaydırır tüm sayfayı görür.............passed
-And dashboard da bulunan paket bilgisi butonuna tıklar......................passed
-And fatura bilgileri sekmesine tıklar.......................................passed
-Then buradaki bilgileri doldurur ve onayla sekmesine tıklar.................passed
-And sayfayı küçülterek ekran kaydı alır.....................................passed
+And uretici ve toptancılar sekmesine tıklar.................................passed
+Then Uretici veya Toptancı ol sekmesine tıklar..............................passed
+And acilan sayfada gerekli bilgileri doldurur...............................passed
+And kayıt ol sekmesine tıklar...............................................passed
+And Kullanıcı magaza bilgileri gecersiz. Lütfen kontrol ediniz yazısını görür.passed
 And sayfayı kapatır.........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Members Home Page" name="TC04" time="21.51">
-<system-out><![CDATA[
-Given kullanıcı members.rexven.com sayfasına gider..........................passed
-Then geçerli mail adresi girer..............................................passed
-And geçerli password girer..................................................passed
-And dashboard da bulunan discord sekmesine tıklar...........................passed
-And yeni açılan pencereye gider ve  hayır,teşekkürler sekmesine tıklar......passed
-And sayfayı kapatır.........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Members Home Page" name="TC05" time="16.152">
-<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element is not clickable at point (887, 1137)
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [735f2412643ed3ee06a7d26b4a6606e3, clickElement {id=175C69A0F660A3F15FABA5B8DFDF21C7_element_25}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ERTURU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59980}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59980/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (735f2412643ed3ee06a7d26b4a6606e3)] -&gt; xpath: //button[@class='px-8 bg-headerPrimary py-2 text-white rounded-md shadow-md']]
-Session ID: 735f2412643ed3ee06a7d26b4a6606e3">
-<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (887, 1137)
-  (Session info: chrome=113.0.5672.93)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [735f2412643ed3ee06a7d26b4a6606e3, clickElement {id=175C69A0F660A3F15FABA5B8DFDF21C7_element_25}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ERTURU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59980}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59980/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (735f2412643ed3ee06a7d26b4a6606e3)] -> xpath: //button[@class='px-8 bg-headerPrimary py-2 text-white rounded-md shadow-md']]
-Session ID: 735f2412643ed3ee06a7d26b4a6606e3
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy23.click(Unknown Source)
-	at stepdefinitions.Dashboard05StepDefinitions.dashboard_da_bulunan_indirimleri_keşfet_sekmesine_tıklar(Dashboard05StepDefinitions.java:22)
-	at ✽.dashboard da bulunan indirimleri keşfet sekmesine tıklar(file:///C:/Users/Ertuğrul/IdeaProjects/Members_Panel/src/test/resources/features/Dashboard.feature:50)
-]]>
-</failure>
-<system-out><![CDATA[
-Given kullanıcı members.rexven.com sayfasına gider..........................passed
-Then geçerli mail adresi girer..............................................passed
-And geçerli password girer..................................................passed
-And dashboard da bulunan indirimleri keşfet sekmesine tıklar................failed
-And sayfayı aşagı kaydırır ve tüm hizmet saglayıcıları görür................skipped
-Then indirim al butonuna tıklar ve tamam sekmesine tıklar...................skipped
-Then sayfayı kapatır........................................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

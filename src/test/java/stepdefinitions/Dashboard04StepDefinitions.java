@@ -10,13 +10,13 @@ public class Dashboard04StepDefinitions {
     @Then("dashboard da bulunan discord sekmesine tıklar")
     public void discord_sekmesine_tıklar() {
         members_page.dashboarddiscord.click();
-        ResuableMethods.waitFor(2);
+        ResuableMethods.waitFor(5);
     }
     @Then("yeni açılan pencereye gider ve  hayır,teşekkürler sekmesine tıklar")
     public void yeni_açılan_pencereye_gider_ve_hayıt_teşekkürler_sekmesine_tıklar() {
 
        ResuableMethods.switchToWindow("https://discord.com/invite/YYG6N7xrNC");
-       ResuableMethods.waitFor(3);
+       ResuableMethods.waitFor(5);
 
 
     }

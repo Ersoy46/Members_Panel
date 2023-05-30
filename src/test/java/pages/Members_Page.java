@@ -50,6 +50,32 @@ public  WebElement girişyap;
     @FindBy(xpath = "//button[@class='px-8 bg-headerPrimary py-2 text-white rounded-md shadow-md']")
     public WebElement dashboardindirimlerikesfet;
 
+    @FindBy(xpath = "//a[@href='/manufacturers-and-wholesalers']")
+    public WebElement ureticiveToptancı;
+
+
+    @FindBy(xpath = "//a[@href='https://wa.me/905066294010?text=Merhaba,%20ben%20size%20Rexven%20arac%C4%B1l%C4%B1%C4%9F%C4%B1yla%20ula%C5%9Ft%C4%B1m']")
+    public WebElement ureticiveToptancıiletisimKur;
+
+    @FindBy(xpath = "//input[@class='PhoneInputInput']")
+    public WebElement telefonNumarasıKayıt;
+
+    @FindBy(xpath = "//input[@id='contract']")
+    public WebElement telefonNumarasıKvkkOnay;
+
+    @FindBy(xpath = "//button[@class='flex flex-row items-center justify-center text-center w-full border rounded-xl outline-none py-3 undefined  bg-headerPrimary border-none text-white text-sm shadow-sm']")
+    public WebElement telefonNumarasıOnaylaButonu;
+
+    @FindBy(xpath = "//button[@class='w-[50%] border-2 py-2 border-headerPrimary rounded-r-md']")
+    public WebElement urunlerButonu;
+
+    @FindBy(xpath = "//div[22]//button[@class='w-full']")
+    public WebElement urunleriInceleIletisimKur;
+
+
+
+
+
 
 
 

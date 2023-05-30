@@ -55,8 +55,8 @@ public class Dashboard05StepDefinitions {
         ifasTurkİndirimAl.click();
         ResuableMethods.waitFor(2);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("document.body.style.zoom='90%';");
+        //  JavascriptExecutor js = (JavascriptExecutor) driver;
+        //  js.executeScript("document.body.style.zoom='80%';");
         ResuableMethods.waitFor(2);
 
         WebElement indirimTamamButonu = driver.findElement(By.xpath("//button[@class='mt-3  text-white justify-center rounded-md bg-primary px-8 py-2 text-sm font-semibold  shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 hover:text-primary sm:col-start-1 sm:mt-0']"));

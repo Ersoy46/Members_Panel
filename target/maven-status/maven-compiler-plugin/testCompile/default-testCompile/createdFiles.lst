@@ -5,9 +5,14 @@ stepdefinitions\Dashboard02StepDefinitions.class
 runners\Runner.class
 utilities\Driver.class
 stepdefinitions\Dashboard04StepDefinitions.class
+stepdefinitions\Uretici_Toptancý_StepDefinitions06.class
 stepdefinitions\Dashboard03StepDefinitions.class
 utilities\ResuableMethods.class
 utilities\ResuableMethods$2.class
+stepdefinitions\Uretici_Toptancý_StepDefinitions07.class
 utilities\ConfigReader.class
+stepdefinitions\Uretici_Toptancý_StepDefinitions09.class
+stepdefinitions\Uretici_Toptancý_StepDefinitions08.class
+pages\Producer_Page.class
 utilities\ResuableMethods$1.class
 pages\Members_Page.class

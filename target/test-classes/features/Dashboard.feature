@@ -1,7 +1,7 @@
-@smoke
+@dashboard
 Feature: Members Home Page
 
-
+  @tc01
   Scenario: TC01
 
     Given kullanıcı members.rexven.com sayfasına gider
@@ -12,6 +12,7 @@ Feature: Members Home Page
     When Ad Soyad bölümüne gerekli bilgileri girer
     Then Onayla der ve sayfayı kapatır.
 
+  @tc02
   Scenario: TC02
 
     Given kullanıcı members.rexven.com sayfasına gider
@@ -22,6 +23,7 @@ Feature: Members Home Page
     And sayfayı aşagı kaydırır entegrasyon videosunun çalıştığını teyit eder.
     Then sayfayı kapatır.
 
+  @tc03
   Scenario:TC03
     Given kullanıcı members.rexven.com sayfasına gider
     Then  geçerli mail adresi girer
@@ -34,6 +36,7 @@ Feature: Members Home Page
     And sayfayı kapatır.
 
 
+  @tc04
     Scenario: TC04
       Given kullanıcı members.rexven.com sayfasına gider
       Then  geçerli mail adresi girer
@@ -43,6 +46,7 @@ Feature: Members Home Page
       And sayfayı kapatır.
 
 
+@tc05
   Scenario: TC05
     Given kullanıcı members.rexven.com sayfasına gider
     Then  geçerli mail adresi girer
@@ -51,5 +55,4 @@ Feature: Members Home Page
     And  sayfayı aşagı kaydırır ve tüm hizmet saglayıcıları görür
     Then indirim al butonuna tıklar ve tamam sekmesine tıklar
     Then sayfayı kapatır.
-
 
