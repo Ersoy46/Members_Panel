@@ -1,4 +1,4 @@
-@dashboard
+@test
 Feature: Members Home Page
 
   @tc01
@@ -21,7 +21,7 @@ Feature: Members Home Page
     And  dashboard sayfasını aşagı-yukarı kaydırır tüm sayfayı görür
     And dashboard da bulunan entegrasyon butonuna tıklar
     And sayfayı aşagı kaydırır entegrasyon videosunun çalıştığını teyit eder.
-    Then sayfayı kapatır.
+   #Then sayfayı kapatır.
 
   @tc03
   Scenario:TC03
@@ -33,7 +33,7 @@ Feature: Members Home Page
     And  fatura bilgileri sekmesine tıklar
     Then buradaki bilgileri doldurur ve onayla sekmesine tıklar.
     And  sayfayı küçülterek ekran kaydı alır
-    And sayfayı kapatır.
+   # And sayfayı kapatır.
 
 
   @tc04
@@ -43,7 +43,7 @@ Feature: Members Home Page
       And  geçerli password girer
       And dashboard da bulunan discord sekmesine tıklar
       And yeni açılan pencereye gider ve  hayır,teşekkürler sekmesine tıklar
-      And sayfayı kapatır.
+     And sayfayı kapatır.
 
 
 @tc05
@@ -54,5 +54,5 @@ Feature: Members Home Page
     And dashboard da bulunan indirimleri keşfet sekmesine tıklar
     And  sayfayı aşagı kaydırır ve tüm hizmet saglayıcıları görür
     Then indirim al butonuna tıklar ve tamam sekmesine tıklar
-    Then sayfayı kapatır.
+   # Then sayfayı kapatır.
 

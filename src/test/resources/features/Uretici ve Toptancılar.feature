@@ -1,4 +1,4 @@
-@producer
+@test
 Feature: Üretici ve Toptancılar
 
   @tc06
@@ -22,7 +22,7 @@ Feature: Üretici ve Toptancılar
     And urunler butonuna tıklar
     Then sayfayı aşagı kaydırır tüm ürünleri görür
     And  iletişim kur butonuna tıklar ve whatsapp'a yönlendirdiğini teyit eder
-    And sayfayı kapatır.
+   # And sayfayı kapatır.
 
 
   @tc08
@@ -38,7 +38,7 @@ Feature: Üretici ve Toptancılar
     Then sayfayı aşagı kaydırıp tüm ürünleri görür
     And ikinci sayfaya gecer tüm ürünleri kontrol eder
     And ucuncu sayfaya gecer tüm urunleri kontrol eder
-    And sayfayı kapatır.
+   # And sayfayı kapatır.
 
     @tc09
     Scenario: TC09
@@ -50,7 +50,7 @@ Feature: Üretici ve Toptancılar
       And acilan sayfada gerekli bilgileri doldurur
       And kayıt ol sekmesine tıklar
       And  Kullanıcı magaza bilgileri gecersiz. Lütfen kontrol ediniz yazısını görür
-      And sayfayı kapatır.
+     # And sayfayı kapatır.
 
 
 

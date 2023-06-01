@@ -1,6 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="47.295" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Üretici ve Toptancılar" name="TC09" time="47.08">
+<testsuite name="Cucumber" time="509.929" tests="13" skipped="0" failures="1" errors="0">
+<testcase classname="Danışmanlık Bölümü" name="TC11" time="22.172">
+<system-out><![CDATA[
+Given kullanıcı members.rexven.com sayfasına gider..........................passed
+Then geçerli mail adresi girer..............................................passed
+And geçerli password girer..................................................passed
+And Danısmanlik sekmesine tiklar............................................passed
+Then 3 tane danismanlik paketinin oldugunu kontrol eder.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Danışmanlık Bölümü" name="TC12" time="36.27">
+<system-out><![CDATA[
+Given kullanıcı members.rexven.com sayfasına gider..........................passed
+Then geçerli mail adresi girer..............................................passed
+And geçerli password girer..................................................passed
+And Danısmanlik sekmesine tiklar............................................passed
+And sayfayı asagi indirip Amazon paketindeki avantajlari görüntüleye tıklar.passed
+And sayfayı asagi indirip Rexven Exclusive paketindeki avantajlari görüntüleye tıklar.passed
+And sayfayı asagİ indirip ETSY paketindeki avantajlari görüntüleye tıklar...passed
+]]></system-out>
+</testcase>
+<testcase classname="Danışmanlık Bölümü" name="TC13" time="71.158">
+<system-out><![CDATA[
+Given kullanıcı members.rexven.com sayfasına gider..........................passed
+Then geçerli mail adresi girer..............................................passed
+And geçerli password girer..................................................passed
+And Danısmanlik sekmesine tiklar............................................passed
+And sayfayı asagi indirip Amazon paketindeki iletisim kur sekmesine tıklar..passed
+And yeni acilan sayfada gerekli bilgileri doldurur ileri der................passed
+And pazaryeri olarak Amazonu isaretler ileri der............................passed
+And bütce sekmesinde 0-1000$ isaretler ve formu gönder yazısını görür.......passed
+And 5000-10000$ sekmesine tıklar ve acilan sayfada randevu al butonuna tıklar.passed
+]]></system-out>
+</testcase>
+<testcase classname="Members Home Page" name="TC01" time="27.177">
+<system-out><![CDATA[
+Given kullanıcı members.rexven.com sayfasına gider..........................passed
+Then geçerli mail adresi girer..............................................passed
+And geçerli password girer..................................................passed
+And dashboard sayfasını aşagı-yukarı kaydırır tüm sayfayı görür.............passed
+And dashboard da bulunan profil butonuna tıklar.............................passed
+When Ad Soyad bölümüne gerekli bilgileri girer..............................passed
+Then Onayla der ve sayfayı kapatır..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Members Home Page" name="TC02" time="30.837">
+<system-out><![CDATA[
+Given kullanıcı members.rexven.com sayfasına gider..........................passed
+Then geçerli mail adresi girer..............................................passed
+And geçerli password girer..................................................passed
+And dashboard sayfasını aşagı-yukarı kaydırır tüm sayfayı görür.............passed
+And dashboard da bulunan entegrasyon butonuna tıklar........................passed
+And sayfayı aşagı kaydırır entegrasyon videosunun çalıştığını teyit eder....passed
+]]></system-out>
+</testcase>
+<testcase classname="Members Home Page" name="TC03" time="43.27">
+<system-out><![CDATA[
+Given kullanıcı members.rexven.com sayfasına gider..........................passed
+Then geçerli mail adresi girer..............................................passed
+And geçerli password girer..................................................passed
+And dashboard sayfasını aşagı-yukarı kaydırır tüm sayfayı görür.............passed
+And dashboard da bulunan paket bilgisi butonuna tıklar......................passed
+And fatura bilgileri sekmesine tıklar.......................................passed
+Then buradaki bilgileri doldurur ve onayla sekmesine tıklar.................passed
+And sayfayı küçülterek ekran kaydı alır.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Members Home Page" name="TC04" time="21.944">
+<system-out><![CDATA[
+Given kullanıcı members.rexven.com sayfasına gider..........................passed
+Then geçerli mail adresi girer..............................................passed
+And geçerli password girer..................................................passed
+And dashboard da bulunan discord sekmesine tıklar...........................passed
+And yeni açılan pencereye gider ve  hayır,teşekkürler sekmesine tıklar......passed
+And sayfayı kapatır.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Members Home Page" name="TC05" time="38.126">
+<system-out><![CDATA[
+Given kullanıcı members.rexven.com sayfasına gider..........................passed
+Then geçerli mail adresi girer..............................................passed
+And geçerli password girer..................................................passed
+And dashboard da bulunan indirimleri keşfet sekmesine tıklar................passed
+And sayfayı aşagı kaydırır ve tüm hizmet saglayıcıları görür................passed
+Then indirim al butonuna tıklar ve tamam sekmesine tıklar...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Hizmet Saglayıcılar" name="TC10" time="57.119">
+<system-out><![CDATA[
+Given kullanıcı members.rexven.com sayfasına gider..........................passed
+Then geçerli mail adresi girer..............................................passed
+And geçerli password girer..................................................passed
+And hizmet saglayıcılar sekmesine tıklar....................................passed
+Then acılan sayfayı asagı-yukarı kaydırır tüm sayfayi görür.................passed
+And clemta isimli sirketin altında bulunan indirim al butonuna basar ve tamam der.passed
+And vidyoner isimli sirketin altında bulunan indirim al butonuna basar ve tamam der.passed
+And shıppıng garage isimli sirketin altında bulunan indirim al butonuna basar ve tamam der.passed
+]]></system-out>
+</testcase>
+<testcase classname="Üretici ve Toptancılar" name="TC06" time="11.95">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href='/manufacturers-and-wholesalers']&quot;}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [af179df88f37c49a17c474174f87adfb, findElement {using=xpath, value=//a[@href='/manufacturers-and-wholesalers']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ERTURU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52893/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: af179df88f37c49a17c474174f87adfb">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/manufacturers-and-wholesalers']"}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [af179df88f37c49a17c474174f87adfb, findElement {using=xpath, value=//a[@href='/manufacturers-and-wholesalers']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ERTURU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52893/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: af179df88f37c49a17c474174f87adfb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at stepdefinitions.Uretici_Toptancı_StepDefinitions06.uretici_ve_toptancılar_sekmesine_tıklar(Uretici_Toptancı_StepDefinitions06.java:17)
+	at ✽.uretici ve toptancılar sekmesine tıklar(file:///C:/Users/Ertuğrul/IdeaProjects/Members_Panel/src/test/resources/features/Uretici%20ve%20Toptancılar.feature:10)
+]]>
+</failure>
+<system-out><![CDATA[
+Given kullanıcı members.rexven.com sayfasına gider..........................passed
+Then geçerli mail bir adresi girer..........................................passed
+And geçerli password girer..................................................passed
+And uretici ve toptancılar sekmesine tıklar.................................failed
+Then sayfayı aşagı-yukarı kaydırır tüm saticilari görür.....................skipped
+And iletişim kur butonuna tıklar............................................skipped
+And telefon numarası girer ve doğrulama kodu geldiğini teyit eder...........skipped
+]]></system-out>
+</testcase>
+<testcase classname="Üretici ve Toptancılar" name="TC07" time="38.773">
+<system-out><![CDATA[
+Given kullanıcı members.rexven.com sayfasına gider..........................passed
+Then geçerli mail adresi girer..............................................passed
+And geçerli password girer..................................................passed
+And uretici ve toptancılar sekmesine tıklar.................................passed
+And urunler butonuna tıklar.................................................passed
+Then sayfayı aşagı kaydırır tüm ürünleri görür..............................passed
+And iletişim kur butonuna tıklar ve whatsapp'a yönlendirdiğini teyit eder...passed
+]]></system-out>
+</testcase>
+<testcase classname="Üretici ve Toptancılar" name="TC08" time="70.915">
+<system-out><![CDATA[
+Given kullanıcı members.rexven.com sayfasına gider..........................passed
+Then geçerli mail adresi girer..............................................passed
+And geçerli password girer..................................................passed
+And uretici ve toptancılar sekmesine tıklar.................................passed
+And search butonuna eşofman yazar...........................................passed
+Then ara sekmesine tıklar...................................................passed
+And Mossi isimli firmanın urunleri incele sekmesine tıklar..................passed
+And sayfa URL'sinin Mossi isimli firmaya ait olduğunu teyit eder............passed
+Then sayfayı aşagı kaydırıp tüm ürünleri görür..............................passed
+And ikinci sayfaya gecer tüm ürünleri kontrol eder..........................passed
+And ucuncu sayfaya gecer tüm urunleri kontrol eder..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Üretici ve Toptancılar" name="TC09" time="40.005">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then geçerli mail adresi girer..............................................passed
@@ -10,7 +185,6 @@ Then Uretici veya Toptancı ol sekmesine tıklar..............................pa
 And acilan sayfada gerekli bilgileri doldurur...............................passed
 And kayıt ol sekmesine tıklar...............................................passed
 And Kullanıcı magaza bilgileri gecersiz. Lütfen kontrol ediniz yazısını görür.passed
-And sayfayı kapatır.........................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
