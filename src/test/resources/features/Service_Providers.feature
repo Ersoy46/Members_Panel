@@ -1,4 +1,4 @@
-@test
+@serviceproviders
 
 Feature: Hizmet Saglayıcılar
 

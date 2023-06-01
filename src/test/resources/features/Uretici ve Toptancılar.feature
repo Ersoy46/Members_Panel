@@ -1,4 +1,4 @@
-@test
+@producer
 Feature: Üretici ve Toptancılar
 
   @tc06

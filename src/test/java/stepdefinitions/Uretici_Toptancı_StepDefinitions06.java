@@ -33,9 +33,9 @@ public class Uretici_Toptancı_StepDefinitions06 {
         actions.sendKeys(Keys.PAGE_DOWN).perform();
 
         actions.sendKeys(Keys.PAGE_UP).perform();
-        ResuableMethods.waitFor(1);
+        ResuableMethods.waitFor(2);
         actions.sendKeys(Keys.PAGE_UP).perform();
-        ResuableMethods.waitFor(1);
+        ResuableMethods.waitFor(2);
         actions.sendKeys(Keys.PAGE_UP)
                 .sendKeys(Keys.PAGE_UP)
                 .sendKeys(Keys.PAGE_UP).perform();
@@ -57,9 +57,9 @@ public class Uretici_Toptancı_StepDefinitions06 {
         ResuableMethods.waitFor(2);
 
         members_page.telefonNumarasıKayıt.sendKeys("5425424241");
-        ResuableMethods.waitFor(1);
+        ResuableMethods.waitFor(2);
         members_page.telefonNumarasıKvkkOnay.click();
-        ResuableMethods.waitFor(1);
+        ResuableMethods.waitFor(2);
         members_page.telefonNumarasıOnaylaButonu.click();
 
         ResuableMethods.waitFor(5);

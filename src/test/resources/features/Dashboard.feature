@@ -1,4 +1,4 @@
-@test
+@dashboard
 Feature: Members Home Page
 
   @tc01

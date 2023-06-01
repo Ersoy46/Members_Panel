@@ -1,4 +1,4 @@
-@test
+@consultancy
 
 Feature: Danışmanlık Bölümü
 
