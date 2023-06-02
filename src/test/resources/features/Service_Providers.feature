@@ -1,4 +1,4 @@
-@serviceproviders
+@smoke
 
 Feature: Hizmet Saglayıcılar
 

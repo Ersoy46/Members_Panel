@@ -1,4 +1,4 @@
-@test
+@smoke
 
 Feature: Danışmanlık Bölümü
 

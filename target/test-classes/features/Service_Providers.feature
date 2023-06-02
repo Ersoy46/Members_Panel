@@ -1,4 +1,4 @@
-@test
+@smoke
 
 Feature: Hizmet Saglayıcılar
 

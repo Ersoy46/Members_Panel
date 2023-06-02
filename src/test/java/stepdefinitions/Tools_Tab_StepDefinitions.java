@@ -25,6 +25,8 @@ public class Tools_Tab_StepDefinitions {
     Actions actions = new Actions(Driver.getDriver());
 
 
+
+
     @Then("araclar sekmesinde bulunan Trendyol sekmesini tiklar")
     public void araclar_sekmesinde_bulunan_trendyol_sekmesini_tiklar() {
         ResuableMethods.waitFor(2);
@@ -38,23 +40,19 @@ public class Tools_Tab_StepDefinitions {
         ResuableMethods.waitFor(3);
     }
 
-    @Then("acilan sayfada  gerekli bilgileri girer ve hesaplama yapar")
+    @Then("acilan sayfada  gerekli tum bilgileri girer ve hesaplama yapar")
     public void acilan_sayfada_gerekli_bilgileri_girer_ve_hesaplama_yapar() throws IOException {
-
-        //    WebElement dropdownElementi =
-        //            driver.findElement(By.xpath("//div[@class=' css-1xc3v61-indicatorContainer']"));
-        //    Select select = new Select(dropdownElementi);
-        //    select.selectByIndex(30);
 
         WebElement dropdownElementi = driver.findElement(By.xpath("//div[@class=' css-1xc3v61-indicatorContainer']"));
         ResuableMethods.waitFor(2);
         dropdownElementi.click();  // Dropdown'ı açmak için tıkla
 
-// İndex 30 olan seçeneği seçmek için 30 kez aşağı ok tuşuna bas
+// İndex 24 olan seçeneği seçmek için 24 kez aşağı ok tuşuna bas
         for (int i = 0; i < 24; i++) {
             actions.sendKeys(Keys.ARROW_DOWN).perform();
         }
         ResuableMethods.waitFor(2);
+
 // Seçimi tamamlamak için ENTER tuşuna bas
         actions.sendKeys(Keys.ENTER).perform();
 
@@ -147,8 +145,13 @@ public class Tools_Tab_StepDefinitions {
         tools_tab_page.trendyolHesaplaButonu.click();
 
         actions.sendKeys(Keys.PAGE_DOWN).perform();
-
         ResuableMethods.waitFor(15);
+
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ResuableMethods.waitFor(3);
+
+
+
 
     }
 
@@ -168,7 +171,7 @@ public class Tools_Tab_StepDefinitions {
         //
         String actualKesinti = tools_tab_page.trendyolHesaplaSonucKesinti.getText();
         String expectedKesinti = "71.89 ₺";
-        Assert.assertEquals("MAALİYET SONUCU UYUSMUYOR", expectedKesinti, actualKesinti);
+        Assert.assertEquals("KESİNTİ SONUCU UYUSMUYOR", expectedKesinti, actualKesinti);
         System.out.println(tools_tab_page.trendyolHesaplaSonucKesinti.getText());
 
         //
@@ -191,4 +194,86 @@ public class Tools_Tab_StepDefinitions {
 
         ResuableMethods.waitFor(3);
     }
+
+    @Then("acilan sayfada kategoriyi secer")
+    public void acilan_sayfada_kategoriyi_secer() {
+
+        WebElement dropdownElementi1 = driver.findElement(By.xpath("//div[@class=' css-1xc3v61-indicatorContainer']"));
+        ResuableMethods.waitFor(2);
+        dropdownElementi1.click();    // Dropdown'ı açmak için tıkla
+
+// İndex 24 olan seçeneği seçmek için 24 kez aşağı ok tuşuna bas
+        for (int i = 0; i < 14; i++) {
+            actions.sendKeys(Keys.ARROW_DOWN).perform();
+        }
+        ResuableMethods.waitFor(2);
+
+// Seçimi tamamlamak için ENTER tuşuna bas
+        actions.sendKeys(Keys.ENTER).perform();
+
+
+
+
+    }
+    @Then("satis fiyatini yazar")
+    public void satis_fiyatini_yazar() {
+
+        tools_tab_page.trendyolsatisFiyati.sendKeys("500");
+        ResuableMethods.waitFor(1);
+
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ResuableMethods.waitFor(2);
+
+
+    }
+    @Then("hesapla butonuna basar")
+    public void hesapla_butonuna_basar() {
+
+        tools_tab_page.trendyolHesaplaButonu.click();
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ResuableMethods.waitFor(15);
+
+    }
+    @Then("gelen sonuclarin dogrulamasini yapar")
+    public void gelen_sonuclarin_dogrulamasini_yapar() {
+        //
+        String actuelGelir = tools_tab_page.trendyolHesaplaSonucGelir.getText();
+        String expectedGelir = "500 ₺";
+        Assert.assertEquals("GELİR SONUCU UYUSMUYOR", expectedGelir, actuelGelir);
+        System.out.println(tools_tab_page.trendyolHesaplaSonucGelir.getText());
+        //
+        String actualMaliyet = tools_tab_page.trendyolHesaplaSonucMaliyet.getText();
+        String expectedMaliyet = "0 ₺";
+        Assert.assertEquals("MAALİYET SONUCU UYUSMUYOR", expectedMaliyet, actualMaliyet);
+        System.out.println(tools_tab_page.trendyolHesaplaSonucMaliyet.getText());
+        //
+        String actualKesinti = tools_tab_page.trendyolHesaplaSonucKesinti.getText();
+        String expectedKesinti = "168.24 ₺";
+        Assert.assertEquals("KESİNTİ SONUCU UYUSMUYOR", expectedKesinti, actualKesinti);
+        System.out.println(tools_tab_page.trendyolHesaplaSonucKesinti.getText());
+
+        //
+        String actualKar = tools_tab_page.trendyolHesaplaSonucKar.getText();
+        String expectedKar = "331.76 ₺";
+        Assert.assertEquals("KAR SONUCU UYUSMUYOR", expectedKar, actualKar);
+        System.out.println(tools_tab_page.trendyolHesaplaSonucKar.getText());
+
+        //
+        String actualKarMarji = tools_tab_page.trendyolHesaplaSonucKarMarjı.getText();
+        String expectedKarMarji = "66.35 %";
+        Assert.assertEquals("KAR MARJI SONUCU UYUSMUYOR", expectedKarMarji, actualKarMarji);
+        System.out.println(tools_tab_page.trendyolHesaplaSonucKarMarjı.getText());
+
+
+        System.out.println(tools_tab_page.sonucKesintiTablosu.getText());
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("document.body.style.zoom='80%';");
+
+        ResuableMethods.waitFor(3);
+    }
+
+
+
+
 }

@@ -1,4 +1,4 @@
-@test
+@smoke
 Feature: Members Home Page
 
   @tc01

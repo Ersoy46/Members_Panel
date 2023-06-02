@@ -1,4 +1,4 @@
-@test
+@smoke
 Feature: Üretici ve Toptancılar
 
   @tc06

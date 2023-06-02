@@ -23,6 +23,7 @@ public class Consultancy_StepDefinitions {
 
     @Then("Danısmanlik sekmesine tiklar")
     public void danısmanlik_sekmesine_tiklar() {
+        ResuableMethods.waitFor(2);
         consultancy_page.danismanlıkSekmesi.click();
         ResuableMethods.waitFor(3);
 
@@ -159,7 +160,7 @@ public class Consultancy_StepDefinitions {
         ResuableMethods.waitFor(2);
         WebElement ileriTusuButce = driver.findElement(By.xpath("//button[@id='form-pagebreak-next_67']"));
         ileriTusuButce.click();
-        ResuableMethods.waitFor(2);
+        ResuableMethods.waitFor(4);
 
 
         WebElement formGonder = driver.findElement(By.xpath("(//button[@class='form-submit-button submit-button jf-form-buttons jsTest-submitField'])[1]"));
@@ -169,7 +170,19 @@ public class Consultancy_StepDefinitions {
 
         WebElement geriTusu = driver.findElement(By.xpath("//button[@class='form-pagebreak-back   jf-form-buttons']"));
         geriTusu.click();
+        ResuableMethods.waitFor(3);
+
+        WebElement butce2 = driver.findElement(By.xpath("//label[.='$1.000 - $5.000']"));
+        butce2.click();
         ResuableMethods.waitFor(2);
+        ileriTusuButce.click();
+        ResuableMethods.waitFor(2);
+
+        ResuableMethods.waitFor(2);
+        WebElement formGonder1 = driver.findElement(By.xpath("(//button[@class='form-submit-button submit-button jf-form-buttons jsTest-submitField'])[1]"));
+        Assert.assertTrue(formGonder1.isDisplayed());
+        geriTusu.click();
+
 
     }
 
@@ -177,11 +190,21 @@ public class Consultancy_StepDefinitions {
     public void $_sekmesine_tıklar_ve_acilan_sayfada_randevu_al_butonuna_tıklar(Integer int1, Integer int2) {
 
         ResuableMethods.waitFor(2);
-        WebElement butce2 = driver.findElement(By.xpath("//label[.='$5.000 - $10.000']"));
-        butce2.click();
+        WebElement butce3 = driver.findElement(By.xpath("//label[.='$5.000 - $10.000']"));
+        butce3.click();
         ResuableMethods.waitFor(2);
         WebElement ileriTusu = driver.findElement(By.xpath("//button[@id='form-pagebreak-next_67']"));
         ileriTusu.click();
+
+   //   WebElement geriTusu = driver.findElement(By.xpath("//button[@class='form-pagebreak-back   jf-form-buttons']"));
+   //   geriTusu.click();
+   //   ResuableMethods.waitFor(2);
+   //   WebElement butce4 = driver.findElement(By.xpath("//label[.='$10.000+']"));
+   //   butce4.click();
+   //   ResuableMethods.waitFor(2);
+   //   ileriTusu.click();
+
+
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("document.body.style.zoom='80%';");

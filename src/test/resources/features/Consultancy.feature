@@ -1,4 +1,4 @@
-@consultancy
+@smoke
 
 Feature: Danışmanlık Bölümü
 

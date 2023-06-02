@@ -1,4 +1,4 @@
-@dashboard
+@smoke
 Feature: Members Home Page
 
   @tc01
