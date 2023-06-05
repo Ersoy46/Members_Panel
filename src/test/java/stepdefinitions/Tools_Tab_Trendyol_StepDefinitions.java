@@ -1,10 +1,8 @@
 package stepdefinitions;
 
 import io.cucumber.java.en.Then;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 //import org.testng.annotations.BeforeMethod;
@@ -15,11 +13,10 @@ import utilities.ResuableMethods;
 
 
 import java.io.IOException;
-import java.time.Duration;
 
 import static utilities.Driver.driver;
 
-public class Tools_Tab_StepDefinitions {
+public class Tools_Tab_Trendyol_StepDefinitions {
 
     Tools_Tab_Page tools_tab_page = new Tools_Tab_Page();
     Actions actions = new Actions(Driver.getDriver());
@@ -34,7 +31,7 @@ public class Tools_Tab_StepDefinitions {
         ResuableMethods.waitFor(2);
     }
 
-    @Then("kar hesaplama secenegini tiklar")
+    @Then("trendyol kar hesaplama secenegini tiklar")
     public void kar_hesaplama_secenegini_tiklar() {
         tools_tab_page.trendyolKarHesaplamaSekmesi.click();
         ResuableMethods.waitFor(3);
