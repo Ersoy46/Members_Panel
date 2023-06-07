@@ -12,6 +12,8 @@ import pages.Consultancy_Page;
 import utilities.Driver;
 import utilities.ResuableMethods;
 
+import java.util.Locale;
+
 import static utilities.Driver.driver;
 
 public class Consultancy_StepDefinitions {
@@ -19,7 +21,7 @@ public class Consultancy_StepDefinitions {
     Consultancy_Page consultancy_page = new Consultancy_Page();
     Actions actions = new Actions(Driver.getDriver());
 
-    Faker faker = new Faker();
+    Faker faker = new Faker(new Locale("tr"));
 
     @Then("Danısmanlik sekmesine tiklar")
     public void danısmanlik_sekmesine_tiklar() {
@@ -130,6 +132,7 @@ public class Consultancy_StepDefinitions {
     public void pazaryeri_olarak_amazonu_isaretler_ileri_der() {
         ResuableMethods.waitFor(2);
         WebElement formAmazonSecenegi = driver.findElement(By.xpath("//label[.='Amazon']"));
+        ResuableMethods.waitFor(1);
         formAmazonSecenegi.click();
         ResuableMethods.waitFor(2);
 

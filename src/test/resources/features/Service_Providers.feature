@@ -1,4 +1,5 @@
-@smoke
+@regresyon
+  @Service_Providers
 
 Feature: Hizmet Saglayıcılar
 
@@ -6,8 +7,8 @@ Feature: Hizmet Saglayıcılar
   Scenario:TC10
 
     Given kullanıcı members.rexven.com sayfasına gider
-    Then  geçerli mail adresi girer
-    And  geçerli password girer
+    Then  gecerli mail adresi girer
+    And  gecerli password girer
     And  hizmet saglayıcılar sekmesine tıklar
     Then  acılan sayfayı asagı-yukarı kaydırır tüm sayfayi görür
     And clemta isimli sirketin altında bulunan indirim al butonuna basar ve tamam der

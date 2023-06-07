@@ -1,4 +1,5 @@
-@smoke
+@regresyon
+  @ureticivetoptancı
 Feature: Üretici ve Toptancılar
 
   @tc06
@@ -6,7 +7,7 @@ Feature: Üretici ve Toptancılar
 
     Given kullanıcı members.rexven.com sayfasına gider
     Then  geçerli mail bir adresi girer
-    And  geçerli password girer
+    And  gecerli password girer
     And  uretici ve toptancılar sekmesine tıklar
     Then sayfayı aşagı-yukarı kaydırır tüm saticilari görür
     And iletişim kur butonuna tıklar
@@ -16,8 +17,8 @@ Feature: Üretici ve Toptancılar
   @tc07
   Scenario: TC07
     Given kullanıcı members.rexven.com sayfasına gider
-    Then  geçerli mail adresi girer
-    And  geçerli password girer
+    Then  gecerli mail adresi girer
+    And  gecerli password girer
     And  uretici ve toptancılar sekmesine tıklar
     And urunler butonuna tıklar
     Then sayfayı aşagı kaydırır tüm ürünleri görür
@@ -28,8 +29,8 @@ Feature: Üretici ve Toptancılar
   @tc08
   Scenario: TC08
     Given kullanıcı members.rexven.com sayfasına gider
-    Then  geçerli mail adresi girer
-    And  geçerli password girer
+    Then  gecerli mail adresi girer
+    And  gecerli password girer
     And  uretici ve toptancılar sekmesine tıklar
     And search butonuna eşofman yazar
     Then ara sekmesine tıklar
@@ -43,8 +44,8 @@ Feature: Üretici ve Toptancılar
     @tc09
     Scenario: TC09
       Given kullanıcı members.rexven.com sayfasına gider
-      Then  geçerli mail adresi girer
-      And  geçerli password girer
+      Then  gecerli mail adresi girer
+      And  gecerli password girer
       And  uretici ve toptancılar sekmesine tıklar
       Then Uretici veya Toptancı ol sekmesine tıklar
       And acilan sayfada gerekli bilgileri doldurur

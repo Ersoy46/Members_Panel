@@ -1,21 +1,21 @@
-@smoke
-
+@regresyon
+@consultancy
 Feature: Danışmanlık Bölümü
 
   @tc11
   Scenario:TC11
 
     Given kullanıcı members.rexven.com sayfasına gider
-    Then  geçerli mail adresi girer
-    And  geçerli password girer
+    Then  gecerli mail adresi girer
+    And  gecerli password girer
     And Danısmanlik sekmesine tiklar
     Then 3 tane danismanlik paketinin oldugunu kontrol eder
 
   @tc12
   Scenario:TC12
     Given kullanıcı members.rexven.com sayfasına gider
-    Then  geçerli mail adresi girer
-    And  geçerli password girer
+    Then  gecerli mail adresi girer
+    And  gecerli password girer
     And Danısmanlik sekmesine tiklar
     And sayfayı asagi indirip Amazon paketindeki avantajlari görüntüleye tıklar
     And sayfayı asagi indirip Rexven Exclusive paketindeki avantajlari görüntüleye tıklar
@@ -25,8 +25,8 @@ Feature: Danışmanlık Bölümü
   @tc13
   Scenario:TC13
     Given kullanıcı members.rexven.com sayfasına gider
-    Then  geçerli mail adresi girer
-    And  geçerli password girer
+    Then  gecerli mail adresi girer
+    And  gecerli password girer
     And Danısmanlik sekmesine tiklar
     And sayfayı asagi indirip Amazon paketindeki iletisim kur sekmesine tıklar
     And yeni acilan sayfada gerekli bilgileri doldurur ileri der

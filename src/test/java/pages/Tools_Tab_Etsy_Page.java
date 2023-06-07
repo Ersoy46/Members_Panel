@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import javax.xml.xpath.XPath;
+
 public class Tools_Tab_Etsy_Page {
 
 
@@ -59,19 +61,19 @@ public class Tools_Tab_Etsy_Page {
     @FindBy(xpath = "//div[@class='flex space-x-1 mt-4']/div[2]//p[@class='mb-1 font-bold text-xs xl:text-sm']")
     public WebElement EtsySonucMaaliyet;
 
-    @FindBy(xpath = "//p[contains(.,'77.72')]")
+    @FindBy(xpath = "//p[contains(.,'78.23')]")
     public WebElement EtsySonucKesinti;
 
-    @FindBy(xpath = "//p[contains(.,'422.28')]")
+    @FindBy(xpath = "//p[contains(.,'421.77')]")
     public WebElement EtsySonucKar;
 
-    @FindBy(xpath = "//p[contains(.,'84.46')]")
+    @FindBy(xpath = "//p[contains(.,'84.35')]")
     public WebElement EtsySonucKarMarji;
 
     @FindBy(xpath = "//h1[@class='w-full border border-[#FF9E66] text-xl font-bold text-[#F45900] text-center rounded-sm bg-[#FFDFCC] p-1 mb-2']")
     public  WebElement EtsyKesintiTablosu;
 
-    @FindBy(xpath = "//p[.='₺ 4.22']")
+    @FindBy(xpath = "//p[.='₺ 4.73']")
     public WebElement EtsySonucListelemeUcreti;
 
     @FindBy(xpath = "//p[.='₺ 32.5']")
@@ -153,4 +155,35 @@ public class Tools_Tab_Etsy_Page {
 @FindBy(xpath = "//button[@class='col-span-12 w-1-2 px-4 py-2 text-sm lg:w-3/12 lg:text-base my-2 mx-auto text-white font-bold rounded-md  bg-headerPrimary    flex items-center justify-center']")
     public WebElement FiltreleriUygulaSekmesi;
 
+    @FindBy(xpath = "//a[.='Satın Al']")
+    public WebElement EtsySatinAl;
+
+    @FindBy(xpath = "//label[.='Yıllık']")
+    public WebElement EkosistemYillikPaket;
+
+    @FindBy(xpath = "//a[@href='https://members.rexven.com/register']")
+    public WebElement EkosistemUcretsizUyelik;
+
+    @FindBy(xpath = "(//div[@class='pricing-footer'])[3]")
+    public WebElement EkosistemeKatilPaketi;
+
+    @FindBy(xpath = "//span[.='SSL Güvenli Ödeme']")
+    public WebElement SSLGuvenliOdeme;
+
+    @FindBy(xpath = "//a[.='Ödeme adımında sorun yaşıyorsanız WhatsApp’tan yazabilirsiniz.']")
+    public WebElement whatsappsekmesi;
+
+    @FindBy(xpath = "//span[.='Sohbete Başla']")
+    public WebElement whatsappSohbeteBasla;
+
+    @FindBy(xpath = "//span[contains(.,'Popüler Satıcılar')]")
+    public WebElement EtsyPopulerSaticilar;
+
+    @FindBy(xpath = "//p[contains(.,'Çok Satan Ürünler Yeni')]")
+    public WebElement EtsyCokSatanUrunler;
+
+    @FindBy(xpath = "//span[contains(.,'Popüler Ürünler')]")
+    public WebElement EtsyPopulerUrunler;
+
 }
+

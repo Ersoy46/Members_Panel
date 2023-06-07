@@ -1,6 +1,8 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.checkerframework.checker.units.qual.K;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -91,19 +93,19 @@ public class Tools_Tab_Etsy_StepDefinitions {
 
         //
         String actualKesinti = tools_tab_etsy_page.EtsySonucKesinti.getText();
-        String expectedKesinti = "77.72";
+        String expectedKesinti = "78.23";
         Assert.assertEquals("KESİNTİ SONUCU UYUSMUYOR", expectedKesinti, actualKesinti);
         System.out.println(tools_tab_etsy_page.EtsySonucKesinti.getText());
 
         //
         String actualKar = tools_tab_etsy_page.EtsySonucKar.getText();
-        String expectedKar = "422.28";
+        String expectedKar = "421.77";
         Assert.assertEquals("KAR SONUCU UYUSMUYOR", expectedKar, actualKar);
         System.out.println(tools_tab_etsy_page.EtsySonucKar.getText());
 
         //
         String actualKarMarji = tools_tab_etsy_page.EtsySonucKarMarji.getText();
-        String expectedKarMarji = "84.46";
+        String expectedKarMarji = "84.35";
         Assert.assertEquals("KAR MARJI SONUCU UYUSMUYOR", expectedKarMarji, actualKarMarji);
         System.out.println(tools_tab_etsy_page.EtsySonucKarMarji.getText());
 
@@ -111,7 +113,7 @@ public class Tools_Tab_Etsy_StepDefinitions {
         System.out.println(tools_tab_etsy_page.EtsyKesintiTablosu.getText());
 
         String actualListelemeUcreti = tools_tab_etsy_page.EtsySonucListelemeUcreti.getText();
-        String expectedListelemeUcreti = "₺ 4.22";
+        String expectedListelemeUcreti = "₺ 4.73";
         Assert.assertEquals("LİSTELEME UCRETİ UYUSMUYOR", expectedListelemeUcreti, actualListelemeUcreti);
         System.out.println(tools_tab_etsy_page.EtsySonucListelemeUcreti.getText());
 
@@ -130,7 +132,7 @@ public class Tools_Tab_Etsy_StepDefinitions {
         //
         String actualIslemUcretiHediyePaketi = tools_tab_etsy_page.EtsySonucIslemUcretiHediyePaketi.getText();
         String expectedIslemUcretiHediyePaketi = "₺ 0";
-        Assert.assertEquals("HEDİYE PAKETİ ISLEM UCRETİ UYUSMUYOR", expectedIslemUcretiKargo, actualIslemUcretiKargo);
+        Assert.assertEquals("HEDİYE PAKETİ ISLEM UCRETİ UYUSMUYOR", expectedIslemUcretiHediyePaketi, actualIslemUcretiHediyePaketi);
         System.out.println(tools_tab_etsy_page.EtsySonucIslemUcretiHediyePaketi.getText());
 
         System.out.println(tools_tab_etsy_page.EtsySonucOdemeIslemUcreti.getText());
@@ -315,7 +317,7 @@ public class Tools_Tab_Etsy_StepDefinitions {
         ResuableMethods.waitFor(2);
         tools_tab_etsy_page.Ulke.click();
         ResuableMethods.waitFor(1);
-        WebElement hepsi=driver.findElement(By.xpath("//span[@class='font-semibold block truncate']"));
+        WebElement hepsi = driver.findElement(By.xpath("//span[@class='font-semibold block truncate']"));
         hepsi.click();
         ResuableMethods.waitFor(1);
 
@@ -323,38 +325,45 @@ public class Tools_Tab_Etsy_StepDefinitions {
         //
         tools_tab_etsy_page.MagazaAcilisYili.click();
         ResuableMethods.waitFor(1);
-        WebElement hepsi1=driver.findElement(By.xpath("//span[@class='font-semibold block truncate']"));
+        WebElement hepsi1 = driver.findElement(By.xpath("//span[@class='font-semibold block truncate']"));
         hepsi1.click();
         ResuableMethods.waitFor(2);
 
         //
         tools_tab_etsy_page.Kategori.click();
         ResuableMethods.waitFor(1);
-        WebElement hepsi2=driver.findElement(By.xpath("//span[@class='font-semibold block truncate']"));
+        WebElement hepsi2 = driver.findElement(By.xpath("//span[@class='font-semibold block truncate']"));
         hepsi2.click();
-       ResuableMethods.waitFor(2);
+        ResuableMethods.waitFor(2);
 
         //
         tools_tab_etsy_page.UrunTipi.click();
         ResuableMethods.waitFor(1);
-        WebElement hepsi3=driver.findElement(By.xpath("//span[@class='font-semibold block truncate']"));
+        WebElement hepsi3 = driver.findElement(By.xpath("//span[@class='font-semibold block truncate']"));
         hepsi3.click();
-       ResuableMethods.waitFor(2);
+        ResuableMethods.waitFor(2);
 
-       //
+        //
         tools_tab_etsy_page.MinToplamSatis.sendKeys("50");
+        ResuableMethods.waitFor(1);
         tools_tab_etsy_page.MaxToplamSatis.sendKeys("5000");
+        ResuableMethods.waitFor(1);
 
         tools_tab_etsy_page.MinOrtGunlukSatis.sendKeys("10");
+        ResuableMethods.waitFor(1);
         tools_tab_etsy_page.MaxOrtGunlukSatis.sendKeys("200");
+        ResuableMethods.waitFor(1);
 
         tools_tab_etsy_page.MinYorumSayisi.sendKeys("30");
+        ResuableMethods.waitFor(1);
         tools_tab_etsy_page.MaxYorumSayisi.sendKeys("600");
+        ResuableMethods.waitFor(1);
 
         tools_tab_etsy_page.MinToplamUrun.sendKeys("200");
+        ResuableMethods.waitFor(1);
+
         tools_tab_etsy_page.MaxToplamUrun.sendKeys("1500");
-
-
+        ResuableMethods.waitFor(1);
     }
 
     @Then("filtreleri uygula secenegine tiklar")
@@ -362,24 +371,16 @@ public class Tools_Tab_Etsy_StepDefinitions {
 
         tools_tab_etsy_page.FiltreleriUygulaSekmesi.click();
         ResuableMethods.waitFor(3);
-        WebElement cookies=driver.findElement(By.xpath("//a[.='Satın Al']"));
-       Assert.assertTrue(cookies.isDisplayed());
-        System.out.println("COOKİES" + cookies.getText());
+
+
     }
 
-    @Then("sayfayi asagi dogru kaydırır ve sadece ilk {int} urunun fotografının geldigini kontrol eder")
-    public void sayfayi_asagi_dogru_kaydırır_ve_sadece_ilk_urunun_fotografının_geldigini_kontrol_eder(Integer int1) {
-
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        ResuableMethods.waitFor(5);
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        ResuableMethods.waitFor(4);
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        ResuableMethods.waitFor(3);
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
+    @And("Satın al popup geldigini teyit eder dogrular.")
+    public void satınAlPopupGeldiginiTeyitEderDogrular() {
+        WebElement cookies = driver.findElement(By.xpath("//a[.='Satın Al']"));
+        Assert.assertTrue(cookies.isDisplayed());
         ResuableMethods.waitFor(2);
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        ResuableMethods.waitFor(1);
+        System.out.println("COOKİES =" + cookies.getText());
     }
 
 

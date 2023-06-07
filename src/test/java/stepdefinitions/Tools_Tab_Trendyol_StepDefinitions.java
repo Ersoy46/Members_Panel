@@ -71,8 +71,7 @@ public class Tools_Tab_Trendyol_StepDefinitions {
         ResuableMethods.waitFor(2);
 
 
-        WebElement KDVDropDown =
-                driver.findElement(By.xpath("//select[@id='vatRate']"));
+        WebElement KDVDropDown = driver.findElement(By.xpath("//select[@id='vatRate']"));
         Select select = new Select(KDVDropDown);
         select.selectByIndex(2);
         ResuableMethods.waitFor(2);
