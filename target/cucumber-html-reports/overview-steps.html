@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber HTML Reports</td>
+        <td>1</td>
+      <td>12 Jul 2023, 15:42</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">stepdefinitions.Consultancy_StepDefinitions.$_sekmesine_t&#305;klar_ve_acilan_sayfada_randevu_al_butonuna_t&#305;klar(java.lang.Integer,java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="12117601900">12.117</td>
+              <td class="duration" data-value="12117601900">12.117</td>
+              <td class="duration" data-value="12117601900">12.117</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Consultancy_StepDefinitions.b&uuml;tce_sekmesinde_$_isaretler_ve_formu_g&ouml;nder_yaz&#305;s&#305;n&#305;_g&ouml;r&uuml;r(java.lang.Integer,java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="20314004200">20.314</td>
+              <td class="duration" data-value="20314004200">20.314</td>
+              <td class="duration" data-value="20314004200">20.314</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Consultancy_StepDefinitions.dan&#305;smanlik_sekmesine_tiklar()</td>
+              <td>3</td>
+              <td class="duration" data-value="5179940866">5.179</td>
+              <td class="duration" data-value="5179940866">5.260</td>
+              <td class="duration" data-value="15539822600">15.539</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Consultancy_StepDefinitions.pazaryeri_olarak_amazonu_isaretler_ileri_der()</td>
+              <td>1</td>
+              <td class="duration" data-value="13294421200">13.294</td>
+              <td class="duration" data-value="13294421200">13.294</td>
+              <td class="duration" data-value="13294421200">13.294</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Consultancy_StepDefinitions.sayfay&#305;_asag_i&#775;_indirip_etsy_paketindeki_avantajlari_g&ouml;r&uuml;nt&uuml;leye_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="12116487800">12.116</td>
+              <td class="duration" data-value="12116487800">12.116</td>
+              <td class="duration" data-value="12116487800">12.116</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Consultancy_StepDefinitions.sayfay&#305;_asagi_indirip_amazon_paketindeki_avantajlari_g&ouml;r&uuml;nt&uuml;leye_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="6081919000">6.081</td>
+              <td class="duration" data-value="6081919000">6.081</td>
+              <td class="duration" data-value="6081919000">6.081</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Consultancy_StepDefinitions.sayfay&#305;_asagi_indirip_amazon_paketindeki_iletisim_kur_sekmesine_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="8118849400">8.118</td>
+              <td class="duration" data-value="8118849400">8.118</td>
+              <td class="duration" data-value="8118849400">8.118</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Consultancy_StepDefinitions.sayfay&#305;_asagi_indirip_rexven_exclusive_paketindeki_avantajlari_g&ouml;r&uuml;nt&uuml;leye_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="2046872000">2.046</td>
+              <td class="duration" data-value="2046872000">2.046</td>
+              <td class="duration" data-value="2046872000">2.046</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Consultancy_StepDefinitions.tane_danismanlik_paketinin_oldugunu_kontrol_eder(java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="7089826600">7.089</td>
+              <td class="duration" data-value="7089826600">7.089</td>
+              <td class="duration" data-value="7089826600">7.089</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Consultancy_StepDefinitions.yeni_acilan_sayfada_gerekli_bilgileri_doldurur_ileri_der()</td>
+              <td>1</td>
+              <td class="duration" data-value="14038589800">14.038</td>
+              <td class="duration" data-value="14038589800">14.038</td>
+              <td class="duration" data-value="14038589800">14.038</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.ad_soyad_b&ouml;l&uuml;m&uuml;ne_gerekli_bilgileri_girer()</td>
+              <td>1</td>
+              <td class="duration" data-value="5178430100">5.178</td>
+              <td class="duration" data-value="5178430100">5.178</td>
+              <td class="duration" data-value="5178430100">5.178</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.buradaki_bilgileri_doldurur_ve_onayla_sekmesine_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="14567542800">14.567</td>
+              <td class="duration" data-value="14567542800">14.567</td>
+              <td class="duration" data-value="14567542800">14.567</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.dashboard_da_bulunan_entegraasyon_butonuna_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="3083251700">3.083</td>
+              <td class="duration" data-value="3083251700">3.083</td>
+              <td class="duration" data-value="3083251700">3.083</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.dashboard_da_bulunan_indirimleri_ke&#351;fet_sekmesine_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="10097495200">10.097</td>
+              <td class="duration" data-value="10097495200">10.097</td>
+              <td class="duration" data-value="10097495200">10.097</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.dashboard_da_bulunan_paket_bilgisi_butonuna_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="3090248100">3.090</td>
+              <td class="duration" data-value="3090248100">3.090</td>
+              <td class="duration" data-value="3090248100">3.090</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.dashboard_da_bulunan_profil_butonuna_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="3080609100">3.080</td>
+              <td class="duration" data-value="3080609100">3.080</td>
+              <td class="duration" data-value="3080609100">3.080</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.dashboard_sayfas&#305;n&#305;_a&#351;ag&#305;_kayd&#305;r&#305;r_t&uuml;m_sayfay&#305;_g&ouml;r&uuml;r()</td>
+              <td>3</td>
+              <td class="duration" data-value="9063973333">9.063</td>
+              <td class="duration" data-value="9063973333">9.065</td>
+              <td class="duration" data-value="27191920000">27.191</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.discord_sekmesine_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="7085829700">7.085</td>
+              <td class="duration" data-value="7085829700">7.085</td>
+              <td class="duration" data-value="7085829700">7.085</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.fatura_bilgileri_sekmesine_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="3066507900">3.066</td>
+              <td class="duration" data-value="3066507900">3.066</td>
+              <td class="duration" data-value="3066507900">3.066</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.ge&ccedil;erli_mail_adresi_girer()</td>
+              <td>47</td>
+              <td class="duration" data-value="2047855172">2.047</td>
+              <td class="duration" data-value="2047855172">2.123</td>
+              <td class="duration" data-value="96249193100">1:36.249</td>
+              <td class="failed">97.87%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.ge&ccedil;erli_password_girer()</td>
+              <td>56</td>
+              <td class="duration" data-value="2024058916">2.024</td>
+              <td class="duration" data-value="2024058916">2.095</td>
+              <td class="duration" data-value="113347299300">1:53.347</td>
+              <td class="failed">98.21%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.indirim_al_butonuna_t&#305;klar_ve_tamam_sekmesine_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="6130513000">6.130</td>
+              <td class="duration" data-value="6130513000">6.130</td>
+              <td class="duration" data-value="6130513000">6.130</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.kullan&#305;c&#305;_members_rexven_com_sayfas&#305;na_gider()</td>
+              <td>61</td>
+              <td class="duration" data-value="6325474306">6.325</td>
+              <td class="duration" data-value="6325474306">37.757</td>
+              <td class="duration" data-value="385853932700">6:25.853</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.onayla_der_ve_sayfay&#305;_kapat&#305;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="34725000">0.034</td>
+              <td class="duration" data-value="34725000">0.034</td>
+              <td class="duration" data-value="34725000">0.034</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.sayfay&#305;_a&#351;ag&#305;_kayd&#305;r&#305;r_entegrasyon_videosunun_&ccedil;al&#305;&#351;t&#305;&#287;&#305;n&#305;_teyit_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="8027496900">8.027</td>
+              <td class="duration" data-value="8027496900">8.027</td>
+              <td class="duration" data-value="8027496900">8.027</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.sayfay&#305;_a&#351;ag&#305;_kayd&#305;r&#305;r_ve_t&uuml;m_hizmet_saglay&#305;c&#305;lar&#305;_g&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="15045208500">15.045</td>
+              <td class="duration" data-value="15045208500">15.045</td>
+              <td class="duration" data-value="15045208500">15.045</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.sayfay&#305;_kapat&#305;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="623540900">0.623</td>
+              <td class="duration" data-value="623540900">0.623</td>
+              <td class="duration" data-value="623540900">0.623</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.sayfay&#305;_k&uuml;&ccedil;&uuml;lterek_ekran_kayd&#305;_al&#305;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="3177619200">3.177</td>
+              <td class="duration" data-value="3177619200">3.177</td>
+              <td class="duration" data-value="3177619200">3.177</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DashboardStepDefinitions.yeni_a&ccedil;&#305;lan_pencereye_gider_ve_hay&#305;t_te&#351;ekk&uuml;rler_sekmesine_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="5127918900">5.127</td>
+              <td class="duration" data-value="5127918900">5.127</td>
+              <td class="duration" data-value="5127918900">5.127</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.EKitaplar_StepDefinitions.aDanZYeTrendyolEgitimineTiklarVeIndirir()</td>
+              <td>1</td>
+              <td class="duration" data-value="3076258100">3.076</td>
+              <td class="duration" data-value="3076258100">3.076</td>
+              <td class="duration" data-value="3076258100">3.076</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.EKitaplar_StepDefinitions.adet_e_kitap_oldugunu_teyit_eder_ve_isimlerini_yazdirir(java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.EKitaplar_StepDefinitions.amazonEgitimiEkitabinaTiklarVeIndirir()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.EKitaplar_StepDefinitions.amazondaYolHaritasiEkitabinaTiklarVeIndirir()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.EKitaplar_StepDefinitions.e_kitaplar_sekmesine_tiklar()</td>
+              <td>5</td>
+              <td class="duration" data-value="856543400">0.856</td>
+              <td class="duration" data-value="856543400">2.098</td>
+              <td class="duration" data-value="4282717000">4.282</td>
+              <td class="failed">40.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.EKitaplar_StepDefinitions.indirilenEKitabiAcipDogruIndiginiTeyitEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="4320224800">4.320</td>
+              <td class="duration" data-value="4320224800">4.320</td>
+              <td class="duration" data-value="4320224800">4.320</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.EKitaplar_StepDefinitions.indirilenKitabiAcipDogruIndiginiTeyitEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.EKitaplar_StepDefinitions.indirilenKitab&#305;AcipDogruIndiginiTeyitEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.EKitaplar_StepDefinitions.indirilenKitab&#305;Ac&#305;pDogruIndiginiTeyitEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.EKitaplar_StepDefinitions.sayfayiAsagiIndiripEtsyKurallarRehberiEgitimineTiklarVeIndirir()</td>
+              <td>1</td>
+              <td class="duration" data-value="7093167500">7.093</td>
+              <td class="duration" data-value="7093167500">7.093</td>
+              <td class="duration" data-value="7093167500">7.093</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.aktif_&uuml;ye_olmad&#305;&#287;&#305;n&#305;z_i&ccedil;in_egitimlerden_faydalanamazs&#305;n&#305;z_yazisini_g&ouml;r&uuml;r_ve_kapatir()</td>
+              <td>2</td>
+              <td class="duration" data-value="2153890850">2.153</td>
+              <td class="duration" data-value="2153890850">2.160</td>
+              <td class="duration" data-value="4307781700">4.307</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.amazon_baslangic_egitimine_tiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="8069191200">8.069</td>
+              <td class="duration" data-value="8069191200">8.069</td>
+              <td class="duration" data-value="8069191200">8.069</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.egitimler_sekmesine_tiklar()</td>
+              <td>11</td>
+              <td class="duration" data-value="3366626863">3.366</td>
+              <td class="duration" data-value="3366626863">4.192</td>
+              <td class="duration" data-value="37032895500">37.032</td>
+              <td class="failed">81.82%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.etsyBaslangicEgitimineTiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.ikasBaslangicEgitimineTiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.satinAlSekmesineTiklarPaymentSayfasinaY&ouml;nlendirdiginiKontrolEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="21919906700">21.919</td>
+              <td class="duration" data-value="21919906700">21.919</td>
+              <td class="duration" data-value="21919906700">21.919</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.sayfayiAsagiIndirirVeAmazonMasterEgitimineTiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="10087238800">10.087</td>
+              <td class="duration" data-value="10087238800">10.087</td>
+              <td class="duration" data-value="10087238800">10.087</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.sayfayiAsagiIndirirVeAmazonUzmaniEgtimineTiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="10086403800">10.086</td>
+              <td class="duration" data-value="10086403800">10.086</td>
+              <td class="duration" data-value="10086403800">10.086</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.sayfayiAsagiIndirirVeAmazonUzman&#305;EgtimineTiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="6231728900">6.231</td>
+              <td class="duration" data-value="6231728900">6.231</td>
+              <td class="duration" data-value="6231728900">6.231</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.sayfayiAsagiIndirirVeCanliEgitimKayitlarinaTiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="14094663900">14.094</td>
+              <td class="duration" data-value="14094663900">14.094</td>
+              <td class="duration" data-value="14094663900">14.094</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.sayfayiAsagiIndirirVeEtsyMasterEgitimineTiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="5087358600">5.087</td>
+              <td class="duration" data-value="5087358600">5.087</td>
+              <td class="duration" data-value="5087358600">5.087</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.sayfayiAsagiIndirirVeTrendyolMasterEgitimineTiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="10083918300">10.083</td>
+              <td class="duration" data-value="10083918300">10.083</td>
+              <td class="duration" data-value="10083918300">10.083</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.sayfayi_asagi_indirir_adet_egitim_oldugunu_teyit_eder_konsola_yazdidir(java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="8274182600">8.274</td>
+              <td class="duration" data-value="8274182600">8.274</td>
+              <td class="duration" data-value="8274182600">8.274</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.sayfayi_asagi_indirir_ve_amazon_master_egtimine_tiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="5089524800">5.089</td>
+              <td class="duration" data-value="5089524800">5.089</td>
+              <td class="duration" data-value="5089524800">5.089</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.videoIcerigindeBulunanDigerEgitimlerinDogruCalistiginiTeyitEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.videoIcerisindeBulunanDigerDigerEgitimlerinAcildiginiTeyitEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="20313914700">20.313</td>
+              <td class="duration" data-value="20313914700">20.313</td>
+              <td class="duration" data-value="20313914700">20.313</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.videoIcerisindeBulunanDigerDigerEgitimlerinAcildigin&#305;TeyitEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="20325190200">20.325</td>
+              <td class="duration" data-value="20325190200">20.325</td>
+              <td class="duration" data-value="20325190200">20.325</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.videoIcerisindeBulunanDigerDigerEgitimlerinAcildig&#305;niTeyitEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="20255170800">20.255</td>
+              <td class="duration" data-value="20255170800">20.255</td>
+              <td class="duration" data-value="20255170800">20.255</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.videoIcerisindeBulunanDigerDigerEgitimlerinDogruCalistiginiTeyitEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.videoIcerisindeBulunanDigerEgitimlerinAc&#305;ldigin&#305;TeyitEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="30274143400">30.274</td>
+              <td class="duration" data-value="30274143400">30.274</td>
+              <td class="duration" data-value="30274143400">30.274</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Egitimler_StepDefinitions.video_iceriginde_bulunan_diger_egitimlerin_calistigini_teyit_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="20323437000">20.323</td>
+              <td class="duration" data-value="20323437000">20.323</td>
+              <td class="duration" data-value="20323437000">20.323</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Hooks.setUp()</td>
+              <td>61</td>
+              <td class="duration" data-value="49119">0.000</td>
+              <td class="duration" data-value="49119">0.001</td>
+              <td class="duration" data-value="2996300">0.002</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</td>
+              <td>61</td>
+              <td class="duration" data-value="786202170">0.786</td>
+              <td class="duration" data-value="786202170">1.350</td>
+              <td class="duration" data-value="47958332400">47.958</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Integration_StepDefinitions.entegrasyon_ayarlari_k&#305;sm&#305;nda_bulunan_bilgileri_girer_ve_kayit_ol_der()</td>
+              <td>1</td>
+              <td class="duration" data-value="14252171600">14.252</td>
+              <td class="duration" data-value="14252171600">14.252</td>
+              <td class="duration" data-value="14252171600">14.252</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Integration_StepDefinitions.entegrasyon_sekmesine_tiklar()</td>
+              <td>2</td>
+              <td class="duration" data-value="4109094500">4.109</td>
+              <td class="duration" data-value="4109094500">4.111</td>
+              <td class="duration" data-value="8218189000">8.218</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Integration_StepDefinitions.sag_&uuml;st_tarafda_kullanici_magaza_bilgileri_gecersiz_yazisini_g&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Integration_StepDefinitions.sayfayi_asagi_indirir_ve_entegrasyon_videosunun_sesini_acar()</td>
+              <td>1</td>
+              <td class="duration" data-value="28050136800">28.050</td>
+              <td class="duration" data-value="28050136800">28.050</td>
+              <td class="duration" data-value="28050136800">28.050</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Integration_StepDefinitions.videonun_calistigini_dogrular()</td>
+              <td>1</td>
+              <td class="duration" data-value="35070200">0.035</td>
+              <td class="duration" data-value="35070200">0.035</td>
+              <td class="duration" data-value="35070200">0.035</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Register_Login_StepDefinitions.bo&#351;_alan_b&#305;rak&#305;lamaz_uyari_yazisini_g&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="23212900">0.023</td>
+              <td class="duration" data-value="23212900">0.023</td>
+              <td class="duration" data-value="23212900">0.023</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Register_Login_StepDefinitions.buEmailKullan&#305;lyorYazisiniG&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="2049510600">2.049</td>
+              <td class="duration" data-value="2049510600">2.049</td>
+              <td class="duration" data-value="2049510600">2.049</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Register_Login_StepDefinitions.gecersizMailAdresiGirer()</td>
+              <td>2</td>
+              <td class="duration" data-value="2106804150">2.106</td>
+              <td class="duration" data-value="2106804150">2.112</td>
+              <td class="duration" data-value="4213608300">4.213</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Register_Login_StepDefinitions.gecersiz_password_girer()</td>
+              <td>2</td>
+              <td class="duration" data-value="4065841300">4.065</td>
+              <td class="duration" data-value="4065841300">4.072</td>
+              <td class="duration" data-value="8131682600">8.131</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Register_Login_StepDefinitions.gelenSayfadaGerekliBilgileriDoldurur()</td>
+              <td>1</td>
+              <td class="duration" data-value="9396568000">9.396</td>
+              <td class="duration" data-value="9396568000">9.396</td>
+              <td class="duration" data-value="9396568000">9.396</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Register_Login_StepDefinitions.gelen_sayfada_gerekli_bilgileri_doldurur()</td>
+              <td>1</td>
+              <td class="duration" data-value="9368002700">9.368</td>
+              <td class="duration" data-value="9368002700">9.368</td>
+              <td class="duration" data-value="9368002700">9.368</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Register_Login_StepDefinitions.gelen_sayfada_gerekli_bilgileri_eksik_doldurur()</td>
+              <td>1</td>
+              <td class="duration" data-value="6324778700">6.324</td>
+              <td class="duration" data-value="6324778700">6.324</td>
+              <td class="duration" data-value="6324778700">6.324</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Register_Login_StepDefinitions.ge&ccedil;ersiz_giri&#351;_parola_alanlar&#305;_e&#351;le&#351;miyor_yazisini_g&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="76106800">0.076</td>
+              <td class="duration" data-value="76106800">0.076</td>
+              <td class="duration" data-value="76106800">0.076</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Register_Login_StepDefinitions.kayitOlSekmesineTiklar()</td>
+              <td>3</td>
+              <td class="duration" data-value="68570466">0.068</td>
+              <td class="duration" data-value="68570466">0.072</td>
+              <td class="duration" data-value="205711400">0.205</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Register_Login_StepDefinitions.kvkk_butonunu_i&#351;aretlemez_ve_uyar&#305;_yazisini_g&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="8044679000">8.044</td>
+              <td class="duration" data-value="8044679000">8.044</td>
+              <td class="duration" data-value="8044679000">8.044</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Register_Login_StepDefinitions.yanlisSifreVeMailYazis&#305;niG&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="2053588900">2.053</td>
+              <td class="duration" data-value="2053588900">2.053</td>
+              <td class="duration" data-value="2053588900">2.053</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Register_Login_StepDefinitions.yanlisSifreVeMailYaz&#305;siniG&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Register_Login_StepDefinitions.yanlis_sifre_ve_mail_yazisini_g&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="2008306800">2.008</td>
+              <td class="duration" data-value="2008306800">2.008</td>
+              <td class="duration" data-value="2008306800">2.008</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Register_Login_StepDefinitions.&#351;ifre_ve_&#351;ifre_tekrari_birbiri_ile_farkl&#305;_girer()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.RoadMap_StepDefinitions.sayfayiAsagiIndirirVeAdetYolHaritasiYazisiOldugunuDogrular(int)</td>
+              <td>1</td>
+              <td class="duration" data-value="19234121500">19.234</td>
+              <td class="duration" data-value="19234121500">19.234</td>
+              <td class="duration" data-value="19234121500">19.234</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.RoadMap_StepDefinitions.stage_kisminda_bulunan_sekmeleri_dogrulamasini_yapar()</td>
+              <td>1</td>
+              <td class="duration" data-value="6180053800">6.180</td>
+              <td class="duration" data-value="6180053800">6.180</td>
+              <td class="duration" data-value="6180053800">6.180</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.RoadMap_StepDefinitions.yol_haritasi_sekmesine_tiklar()</td>
+              <td>2</td>
+              <td class="duration" data-value="4114406350">4.114</td>
+              <td class="duration" data-value="4114406350">4.115</td>
+              <td class="duration" data-value="8228812700">8.228</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Service_Providers_StepDefinitions.ac&#305;lan_sayfay&#305;_asag&#305;_yukar&#305;_kayd&#305;r&#305;r_t&uuml;m_sayfayi_g&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="25147757600">25.147</td>
+              <td class="duration" data-value="25147757600">25.147</td>
+              <td class="duration" data-value="25147757600">25.147</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Service_Providers_StepDefinitions.clemta_isimli_sirketin_alt&#305;nda_bulunan_indirim_al_butonuna_basar_ve_tamam_der()</td>
+              <td>1</td>
+              <td class="duration" data-value="6155320400">6.155</td>
+              <td class="duration" data-value="6155320400">6.155</td>
+              <td class="duration" data-value="6155320400">6.155</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Service_Providers_StepDefinitions.hizmet_saglay&#305;c&#305;lar_sekmesine_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="3087001500">3.087</td>
+              <td class="duration" data-value="3087001500">3.087</td>
+              <td class="duration" data-value="3087001500">3.087</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Service_Providers_StepDefinitions.parkpalet_isimli_sirketin_alt&#305;nda_bulunan_indirim_al_butonuna_basar_ve_tamam_der()</td>
+              <td>1</td>
+              <td class="duration" data-value="6123769200">6.123</td>
+              <td class="duration" data-value="6123769200">6.123</td>
+              <td class="duration" data-value="6123769200">6.123</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Service_Providers_StepDefinitions.vidyoner_isimli_sirketin_alt&#305;nda_bulunan_indirim_al_butonuna_basar_ve_tamam_der()</td>
+              <td>1</td>
+              <td class="duration" data-value="6124588600">6.124</td>
+              <td class="duration" data-value="6124588600">6.124</td>
+              <td class="duration" data-value="6124588600">6.124</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Soru_Cevap_Kutuphane_StepDefinitions.gelen_sonuclar&#305;n_emparazon_ile_ilgili_oldugunu_teyit_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="7079725100">7.079</td>
+              <td class="duration" data-value="7079725100">7.079</td>
+              <td class="duration" data-value="7079725100">7.079</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Soru_Cevap_Kutuphane_StepDefinitions.ileriTusunaTiklarDigerSayfalarinDogruAcildiginiTeyitEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="40516371600">40.516</td>
+              <td class="duration" data-value="40516371600">40.516</td>
+              <td class="duration" data-value="40516371600">40.516</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Soru_Cevap_Kutuphane_StepDefinitions.sayfayiAsagiDogruIndirir()</td>
+              <td>1</td>
+              <td class="duration" data-value="7060121800">7.060</td>
+              <td class="duration" data-value="7060121800">7.060</td>
+              <td class="duration" data-value="7060121800">7.060</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Soru_Cevap_Kutuphane_StepDefinitions.search_kismina_emparazon_yazar_ara_der()</td>
+              <td>1</td>
+              <td class="duration" data-value="3099016300">3.099</td>
+              <td class="duration" data-value="3099016300">3.099</td>
+              <td class="duration" data-value="3099016300">3.099</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Soru_Cevap_Kutuphane_StepDefinitions.soru_cevap_kutuphanesi_sekmesine_tiklar()</td>
+              <td>2</td>
+              <td class="duration" data-value="4119404150">4.119</td>
+              <td class="duration" data-value="4119404150">4.152</td>
+              <td class="duration" data-value="8238808300">8.238</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.acilanSayfadaETSY&Ccedil;OKSATANSAT&#304;C&#304;LARYazisininGeldiginiTeyitEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="4061357300">4.061</td>
+              <td class="duration" data-value="4061357300">4.061</td>
+              <td class="duration" data-value="4061357300">4.061</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.acilan_sayfada_etsy_cok_satan_&uuml;r&uuml;nler_yazisinin_geldigini_teyit_eder_yazdirir()</td>
+              <td>1</td>
+              <td class="duration" data-value="2034188200">2.034</td>
+              <td class="duration" data-value="2034188200">2.034</td>
+              <td class="duration" data-value="2034188200">2.034</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.acilan_sayfada_etsy_pop&uuml;ler_sati&#775;ci&#775;lar_yazisinin_geldigini_teyit_eder_yazdirir()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.acilan_sayfada_etsy_pop&uuml;ler_&uuml;r&uuml;nler_yazisinin_geldigini_teyit_eder_yazdirir()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.acilan_sayfay&#305;_asagi_dogru_indirir()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.bilgileriG&ouml;r&uuml;nenSaticilariKonsolaYazdirir()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.bilgileriG&ouml;r&uuml;nenSaticilar&#305;nBilgileriniYazdirir()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.bilgileri_g&ouml;r&uuml;nen_saticilari_konsola_yazdirir()</td>
+              <td>1</td>
+              <td class="duration" data-value="4105770300">4.105</td>
+              <td class="duration" data-value="4105770300">4.105</td>
+              <td class="duration" data-value="4105770300">4.105</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.cok_satan_urunler_sekmesine_tiklar()</td>
+              <td>2</td>
+              <td class="duration" data-value="76199050">0.076</td>
+              <td class="duration" data-value="76199050">0.083</td>
+              <td class="duration" data-value="152398100">0.152</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.gerekliBilgileriDoldurur()</td>
+              <td>1</td>
+              <td class="duration" data-value="21849557200">21.849</td>
+              <td class="duration" data-value="21849557200">21.849</td>
+              <td class="duration" data-value="21849557200">21.849</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.ge&ccedil;erli_&uuml;retli_&uuml;yelik_mail_adresi_girer()</td>
+              <td>8</td>
+              <td class="duration" data-value="2116774137">2.116</td>
+              <td class="duration" data-value="2116774137">2.123</td>
+              <td class="duration" data-value="16934193100">16.934</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.ileriSekmesineBasarVeSaticiBilgilerininGeldiginiTeyitEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="21244846400">21.244</td>
+              <td class="duration" data-value="21244846400">21.244</td>
+              <td class="duration" data-value="21244846400">21.244</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.populer_urunler_sekmesine_tiklar()</td>
+              <td>2</td>
+              <td class="duration" data-value="1046265400">1.046</td>
+              <td class="duration" data-value="1046265400">2.092</td>
+              <td class="duration" data-value="2092530800">2.092</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.pop&uuml;ler_saticilar_sekmesine_tiklar()</td>
+              <td>3</td>
+              <td class="duration" data-value="1383658900">1.383</td>
+              <td class="duration" data-value="1383658900">2.081</td>
+              <td class="duration" data-value="4150976700">4.150</td>
+              <td class="failed">66.67%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.sadece_ilk_urunun_bilgilerinin_geldigini_teyit_eder_ve_konsola_yazdirir(java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="8137169800">8.137</td>
+              <td class="duration" data-value="8137169800">8.137</td>
+              <td class="duration" data-value="8137169800">8.137</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.sat&#305;n_al_popup_una_tiklar()</td>
+              <td>5</td>
+              <td class="duration" data-value="93935340">0.093</td>
+              <td class="duration" data-value="93935340">0.125</td>
+              <td class="duration" data-value="469676700">0.469</td>
+              <td class="failed">80.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.sayfayiAsagiIndirirVeBilgilerinGeldiginiTeyitEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="8752454200">8.752</td>
+              <td class="duration" data-value="8752454200">8.752</td>
+              <td class="duration" data-value="8752454200">8.752</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.sayfayiAsagiIndirirVeT&uuml;mBilgilerinGeldiginiTeyitEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="11067824800">11.067</td>
+              <td class="duration" data-value="11067824800">11.067</td>
+              <td class="duration" data-value="11067824800">11.067</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.sayfayiAsagiIndirirVeT&uuml;mUrunBilgilerininGeldiginiTeyitEder()</td>
+              <td>2</td>
+              <td class="duration" data-value="24246268800">24.246</td>
+              <td class="duration" data-value="24246268800">24.246</td>
+              <td class="duration" data-value="48492537600">48.492</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.sayfayi_asagi_dogru_indirir_ve_sadece_satici_bilgisinin_geldigini_teyit_eder(java.lang.Integer)</td>
+              <td>2</td>
+              <td class="duration" data-value="6023867400">6.023</td>
+              <td class="duration" data-value="6023867400">12.047</td>
+              <td class="duration" data-value="12047734800">12.047</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.sayfayi_asagi_dogru_indirir_ve_sadece_satir_bilgisinin_geldigini_teyit_eder(java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.sayfay&#305;_asagi_kaydirip_paket_iceriklerini_okur()</td>
+              <td>1</td>
+              <td class="duration" data-value="19761361400">19.761</td>
+              <td class="duration" data-value="19761361400">19.761</td>
+              <td class="duration" data-value="19761361400">19.761</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.sayfay&#305;_a&#351;ag&#305;_dogru_kaydirir()</td>
+              <td>1</td>
+              <td class="duration" data-value="8267735800">8.267</td>
+              <td class="duration" data-value="8267735800">8.267</td>
+              <td class="duration" data-value="8267735800">8.267</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.t&uuml;m_saticilarin_bilgilerinin_g&ouml;r&uuml;nd&uuml;g&uuml;n&uuml;_teyit_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.yeniAcilanSayfadaEkosistem&Uuml;yeli&#287;iEkosistemeKatilButonunaTiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="5936550500">5.936</td>
+              <td class="duration" data-value="5936550500">5.936</td>
+              <td class="duration" data-value="5936550500">5.936</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.yeni_acilan_sayfada_asagi_yukari_yaparak_sayfay&#305;_kontrol_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.yeni_acilan_sayfada_ekosistem_&uuml;yeli&#287;i_ekosisteme_katil_butonuna_tiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="16571202600">16.571</td>
+              <td class="duration" data-value="16571202600">16.571</td>
+              <td class="duration" data-value="16571202600">16.571</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.yeni_acilan_sayfada_&uuml;cretsiz_&uuml;yelik_butonuna_tiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy2_StepDefinitions.yillik_secenegine_tiklar_paket_icerigini_kontrol_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="9048508500">9.048</td>
+              <td class="duration" data-value="9048508500">9.048</td>
+              <td class="duration" data-value="9048508500">9.048</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy_StepDefinitions.acilan_sayfada_gerekli_bilgileri_doldurur()</td>
+              <td>6</td>
+              <td class="duration" data-value="18314785016">18.314</td>
+              <td class="duration" data-value="18314785016">22.060</td>
+              <td class="duration" data-value="109888710100">1:49.888</td>
+              <td class="failed">83.33%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy_StepDefinitions.acilan_sayfada_sadece_satis_fiyat&#305;n&#305;_yazar_ve_hesapla_der()</td>
+              <td>1</td>
+              <td class="duration" data-value="26413302800">26.413</td>
+              <td class="duration" data-value="26413302800">26.413</td>
+              <td class="duration" data-value="26413302800">26.413</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy_StepDefinitions.araclar_sekmesinde_bulunan_etsy_sekmesini_tiklar()</td>
+              <td>17</td>
+              <td class="duration" data-value="1503609205">1.503</td>
+              <td class="duration" data-value="1503609205">2.190</td>
+              <td class="duration" data-value="25561356500">25.561</td>
+              <td class="failed">70.59%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy_StepDefinitions.cok_satan_saticilar_sekmesine_tiklar()</td>
+              <td>8</td>
+              <td class="duration" data-value="57876362">0.057</td>
+              <td class="duration" data-value="57876362">0.092</td>
+              <td class="duration" data-value="463010900">0.463</td>
+              <td class="failed">75.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy_StepDefinitions.etsy_kar_hesaplama_secenegini_tiklar()</td>
+              <td>2</td>
+              <td class="duration" data-value="1050846150">1.050</td>
+              <td class="duration" data-value="1050846150">2.101</td>
+              <td class="duration" data-value="2101692300">2.101</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy_StepDefinitions.filtreleri_uygula_secenegine_tiklar()</td>
+              <td>7</td>
+              <td class="duration" data-value="2672368157">2.672</td>
+              <td class="duration" data-value="2672368157">3.129</td>
+              <td class="duration" data-value="18706577100">18.706</td>
+              <td class="failed">85.71%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy_StepDefinitions.gelen_sonuclarin_dogrulamasin&#305;_yapar()</td>
+              <td>1</td>
+              <td class="duration" data-value="355559000">0.355</td>
+              <td class="duration" data-value="355559000">0.355</td>
+              <td class="duration" data-value="355559000">0.355</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy_StepDefinitions.gelen_sonuclarin_dogrulams&#305;n&#305;_yapar()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy_StepDefinitions.gerekli_t&uuml;m_alanlara_satis_bilgileri_girer()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy_StepDefinitions.hesapla_butonuna_tiklar()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy_StepDefinitions.magaza_para_birimi_olarak_turkish_lira_secer()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy_StepDefinitions.offsite_ads(java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy_StepDefinitions.sat&#305;nAlPopupGeldiginiTeyitEderDogrular()</td>
+              <td>1</td>
+              <td class="duration" data-value="3048843500">3.048</td>
+              <td class="duration" data-value="3048843500">3.048</td>
+              <td class="duration" data-value="3048843500">3.048</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy_StepDefinitions.ucretsiz_listeleme_var_olarak_secer()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Etsy_StepDefinitions.vergi_numarasi_yok()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Trendyol_StepDefinitions.acilan_sayfada_gerekli_bilgileri_girer_ve_hesaplama_yapar()</td>
+              <td>1</td>
+              <td class="duration" data-value="66093367100">1:6.093</td>
+              <td class="duration" data-value="66093367100">1:6.093</td>
+              <td class="duration" data-value="66093367100">1:6.093</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Trendyol_StepDefinitions.acilan_sayfada_kategoriyi_secer()</td>
+              <td>1</td>
+              <td class="duration" data-value="4683074500">4.683</td>
+              <td class="duration" data-value="4683074500">4.683</td>
+              <td class="duration" data-value="4683074500">4.683</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Trendyol_StepDefinitions.araclar_sekmesinde_bulunan_trendyol_sekmesini_tiklar()</td>
+              <td>2</td>
+              <td class="duration" data-value="4072821300">4.072</td>
+              <td class="duration" data-value="4072821300">4.080</td>
+              <td class="duration" data-value="8145642600">8.145</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Trendyol_StepDefinitions.cikan_hesaplama_sonucunun_dogru_oldugunu_kontrol_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="3169288300">3.169</td>
+              <td class="duration" data-value="3169288300">3.169</td>
+              <td class="duration" data-value="3169288300">3.169</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Trendyol_StepDefinitions.gelen_sonuclarin_dogrulamasini_yapar()</td>
+              <td>1</td>
+              <td class="duration" data-value="3197028100">3.197</td>
+              <td class="duration" data-value="3197028100">3.197</td>
+              <td class="duration" data-value="3197028100">3.197</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Trendyol_StepDefinitions.hesapla_butonuna_basar()</td>
+              <td>1</td>
+              <td class="duration" data-value="15082648600">15.082</td>
+              <td class="duration" data-value="15082648600">15.082</td>
+              <td class="duration" data-value="15082648600">15.082</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Trendyol_StepDefinitions.kar_hesaplama_secenegini_tiklar()</td>
+              <td>2</td>
+              <td class="duration" data-value="3089463650">3.089</td>
+              <td class="duration" data-value="3089463650">3.091</td>
+              <td class="duration" data-value="6178927300">6.178</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Tools_Tab_Trendyol_StepDefinitions.satis_fiyatini_yazar()</td>
+              <td>1</td>
+              <td class="duration" data-value="3076438300">3.076</td>
+              <td class="duration" data-value="3076438300">3.076</td>
+              <td class="duration" data-value="3076438300">3.076</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.acilan_sayfada_gerekli_bilgileri_doldurur()</td>
+              <td>1</td>
+              <td class="duration" data-value="13278157700">13.278</td>
+              <td class="duration" data-value="13278157700">13.278</td>
+              <td class="duration" data-value="13278157700">13.278</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.ara_sekmesine_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.ge&ccedil;erliMailBirAdresiGirer()</td>
+              <td>1</td>
+              <td class="duration" data-value="2117791600">2.117</td>
+              <td class="duration" data-value="2117791600">2.117</td>
+              <td class="duration" data-value="2117791600">2.117</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.ikinci_sayfaya_gecer_t&uuml;m_&uuml;r&uuml;nleri_kontrol_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="14137642700">14.137</td>
+              <td class="duration" data-value="14137642700">14.137</td>
+              <td class="duration" data-value="14137642700">14.137</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.ileti&#351;im_kur_butonuna_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="3131475000">3.131</td>
+              <td class="duration" data-value="3131475000">3.131</td>
+              <td class="duration" data-value="3131475000">3.131</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.ileti&#351;im_kur_butonuna_t&#305;klar_ve_whatsapp_a_y&ouml;nlendirdi&#287;ini_teyit_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="8263547800">8.263</td>
+              <td class="duration" data-value="8263547800">8.263</td>
+              <td class="duration" data-value="8263547800">8.263</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.kay&#305;t_ol_sekmesine_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="7176753200">7.176</td>
+              <td class="duration" data-value="7176753200">7.176</td>
+              <td class="duration" data-value="7176753200">7.176</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.kullan&#305;c&#305;_magaza_bilgileri_gecersiz_l&uuml;tfen_kontrol_ediniz_yaz&#305;s&#305;n&#305;_g&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.mossi_isimli_firman&#305;n_urunleri_incele_sekmesine_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="5083923900">5.083</td>
+              <td class="duration" data-value="5083923900">5.083</td>
+              <td class="duration" data-value="5083923900">5.083</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.sayfaURLSininMossiIsimliFirmayaAitOldu&#287;unuTeyitEder()</td>
+              <td>1</td>
+              <td class="duration" data-value="45663800">0.045</td>
+              <td class="duration" data-value="45663800">0.045</td>
+              <td class="duration" data-value="45663800">0.045</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.sayfay&#305;_a&#351;ag&#305;_kayd&#305;r&#305;p_t&uuml;m_&uuml;r&uuml;nleri_g&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="11046180700">11.046</td>
+              <td class="duration" data-value="11046180700">11.046</td>
+              <td class="duration" data-value="11046180700">11.046</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.sayfay&#305;_a&#351;ag&#305;_yukar&#305;_kayd&#305;r&#305;r_t&uuml;m_sayfay&#305;_g&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="12118058500">12.118</td>
+              <td class="duration" data-value="12118058500">12.118</td>
+              <td class="duration" data-value="12118058500">12.118</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.sayfay&#305;_a&#351;ag&#305;_yukar&#305;_kayd&#305;r&#305;r_t&uuml;m_&uuml;r&uuml;nleri_g&ouml;r&uuml;r()</td>
+              <td>1</td>
+              <td class="duration" data-value="11067310000">11.067</td>
+              <td class="duration" data-value="11067310000">11.067</td>
+              <td class="duration" data-value="11067310000">11.067</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.search_butonuna_e&#351;ofman_yazar()</td>
+              <td>1</td>
+              <td class="duration" data-value="12082063700">12.082</td>
+              <td class="duration" data-value="12082063700">12.082</td>
+              <td class="duration" data-value="12082063700">12.082</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.telefon_numaras&#305;_girer_ve_do&#287;rulama_kodu_geldi&#287;ini_teyit_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="11202514800">11.202</td>
+              <td class="duration" data-value="11202514800">11.202</td>
+              <td class="duration" data-value="11202514800">11.202</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.ucuncu_sayfaya_gecer_t&uuml;m_urunleri_kontrol_eder()</td>
+              <td>1</td>
+              <td class="duration" data-value="14096944800">14.096</td>
+              <td class="duration" data-value="14096944800">14.096</td>
+              <td class="duration" data-value="14096944800">14.096</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.uretici_ve_toptanc&#305;lar_sekmesine_t&#305;klar()</td>
+              <td>4</td>
+              <td class="duration" data-value="4108288300">4.108</td>
+              <td class="duration" data-value="4108288300">4.126</td>
+              <td class="duration" data-value="16433153200">16.433</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.uretici_veya_toptanc&#305;_ol_sekmesine_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="5090011000">5.090</td>
+              <td class="duration" data-value="5090011000">5.090</td>
+              <td class="duration" data-value="5090011000">5.090</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Uretici_Toptanc&#305;_StepDefinitions.urunleri_incele_butonuna_t&#305;klar()</td>
+              <td>1</td>
+              <td class="duration" data-value="5064893900">5.064</td>
+              <td class="duration" data-value="5064893900">5.064</td>
+              <td class="duration" data-value="5064893900">5.064</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>165</td>
+            <td>529</td>
+            <td class="duration">3.895</td>
+            <td class="duration">6:25.853</td>
+            <td class="duration">34:20.914</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
