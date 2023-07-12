@@ -385,13 +385,14 @@ public class Egitimler_StepDefinitions {
         ResuableMethods.waitFor(1);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ResuableMethods.waitFor(2);
-        WebElement EkosistemeKatil = driver.findElement(By.xpath("//li[@class='elementor-repeater-item-1f4b8d0']//li[@class='pricing-box monthly-box is-visible popular badge-1 ']//a[.='Ekosisteme Katıl']"));
+        WebElement EkosistemeKatil = driver.findElement(By.xpath("//li[@class='elementor-repeater-item-1f4b8d0']//li[@class='pricing-box yearly-box is-visible popular badge-1 ']//a[.='Ekosisteme Katıl']"));
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ResuableMethods.waitFor(2);
         EkosistemeKatil.click();
         Driver.getDriver().get("https://payment.rexven.com/payment/?sellerId=1&platform=iyzico&type=subs&productId=21&sepet-aylik");
         actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ResuableMethods.waitFor(2);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ResuableMethods.waitFor(2);
 
@@ -534,8 +535,7 @@ public class Egitimler_StepDefinitions {
         ResuableMethods.waitFor(2);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ResuableMethods.waitFor(2);
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        ResuableMethods.waitFor(2);
+
         egitimler_page.TrendyolMasterUcretli.click();
         ResuableMethods.waitFor(6);
 
@@ -681,8 +681,7 @@ public class Egitimler_StepDefinitions {
         ResuableMethods.waitFor(2);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ResuableMethods.waitFor(2);
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        ResuableMethods.waitFor(2);
+
         egitimler_page.CanliEgitimKayitlariUcretli.click();
         ResuableMethods.waitFor(10);
 

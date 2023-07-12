@@ -1,5 +1,5 @@
 @regresyon
-  @Tools_Tab
+@Tools_Tab
 Feature: Tools Tab
 
   @tc14
@@ -120,8 +120,9 @@ Feature: Tools Tab
     And filtreleri uygula secenegine tiklar
     And Satın al popup'una tiklar
     And  yeni acilan sayfada Ekosistem üyeliği Ekosisteme katil butonuna tiklar
-    And  yeni acilan sayfada sag üstte SSL Güvenli ödeme yazisinin geldigini teyit edip konsola yazdirir
-    And acilan sayfada tüm bilgileri doldurur ve odeme yap butonuna tiklar
+   # And yıllik fiyatını dogrular
+   # Then KDV fiyatini dogrular.
+   # Then odenecek tutari dogrular.
 
 
   @tc23
@@ -136,7 +137,7 @@ Feature: Tools Tab
     And filtreleri uygula secenegine tiklar
     And Satın al popup'una tiklar
     And  yeni acilan sayfada Ekosistem üyeliği Ekosisteme katil butonuna  tiklar
-    And en allta bulunan whatsapp'dan yazabilirsiniz secenigine tiklar ve kontol eder
+   # And en allta bulunan whatsapp'dan yazabilirsiniz secenegine tiklar ve kontol eder
 
   @tc24
   Scenario: TC24

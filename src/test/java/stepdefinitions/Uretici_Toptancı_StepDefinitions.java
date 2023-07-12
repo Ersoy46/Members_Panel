@@ -4,8 +4,10 @@ import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import pages.Members_Page;
 import pages.Producer_Page;
@@ -145,8 +147,11 @@ public class Uretici_Toptancı_StepDefinitions {
     public void sayfaURLSininMossiIsimliFirmayaAitOlduğunuTeyitEder() {
         String actuelUrl=Driver.getDriver().getCurrentUrl();
         String expectedUrl="https://members.rexven.com/manufacturer/25";
+        System.out.println("Sayfa Url'si ; " + Driver.getDriver().getCurrentUrl());
 
         Assert.assertEquals("SAYFA URL'Sİ DOGRU DEGİL", expectedUrl, actuelUrl);
+        WebElement Mossi=driver.findElement(By.xpath("//h1[@class='ml-2 font-bold uppercase']"));
+        System.out.println("Üretici ve Toptancı İsmi ; " + Mossi.getText());
     }
 
     @Then("sayfayı aşagı kaydırıp tüm ürünleri görür")

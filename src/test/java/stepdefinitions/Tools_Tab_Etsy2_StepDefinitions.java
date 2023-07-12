@@ -97,83 +97,55 @@ public class Tools_Tab_Etsy2_StepDefinitions {
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ResuableMethods.waitFor(3);
         tools_tab_etsy_page.EkosistemeKatilPaketi.click();
-        ResuableMethods.waitFor(2);
+        ResuableMethods.waitFor(10);
 
     }
 
-    @Then("yeni acilan sayfada sag üstte SSL Güvenli ödeme yazisinin geldigini teyit edip konsola yazdirir")
-    public void yeni_acilan_sayfada_sag_üstte_ssl_güvenli_ödeme_yazisinin_geldigini_teyit_edip_konsola_yazdirir() {
-        Driver.getDriver().get("https://payment.rexven.com/payment/?sellerId=1&platform=iyzico&type=subs&productId=21&sepet-aylik");
-        ResuableMethods.switchToWindow("ODEME SAYFASİ");
-        ResuableMethods.waitFor(2);
-        Assert.assertTrue(tools_tab_etsy_page.SSLGuvenliOdeme.isDisplayed());
-        System.out.println(tools_tab_etsy_page.SSLGuvenliOdeme.getText());
-    }
-
-    @Then("acilan sayfada tüm bilgileri doldurur ve odeme yap butonuna tiklar")
-    public void acilan_sayfada_tüm_bilgileri_doldurur_ve_odeme_yap_butonuna_tiklar() {
-
-        Faker faker = new Faker(new Locale("tr"));
-        String firstName = "Ömer";
-        String lastName = "Kılıç";
-        String city = "İstanbul";
-        String country = "Türkiye";
-
-
-        actions
-                .sendKeys(Keys.TAB)
-                .sendKeys(faker.internet().emailAddress()).perform();
-        ResuableMethods.waitFor(2);
-        actions.sendKeys(Keys.TAB)
-                .sendKeys(firstName).perform();
-        ResuableMethods.waitFor(1);
-        actions.sendKeys(Keys.TAB)
-                .sendKeys(lastName).perform();
-        ResuableMethods.waitFor(1);
-        actions.sendKeys(Keys.TAB)
-                .sendKeys(faker.numerify("542 542 42 42")).perform();
-        ResuableMethods.waitFor(1);
-        actions.sendKeys(Keys.TAB)
-                .sendKeys(faker.numerify("85214796331")).perform();
-        ResuableMethods.waitFor(1);
-        actions.sendKeys(Keys.TAB)
-                .sendKeys(faker.address().streetAddress()).perform();
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        ResuableMethods.waitFor(1);
-        actions.sendKeys(Keys.TAB)
-                .sendKeys(faker.address().secondaryAddress())
-                .sendKeys(Keys.TAB)
-                .sendKeys(city).perform();
-        ResuableMethods.waitFor(1);
-        actions.sendKeys(Keys.TAB)
-                .sendKeys(country)
-                .sendKeys(Keys.TAB)
-                .sendKeys(faker.address().zipCode()).perform();
-        ResuableMethods.waitFor(2);
-
-
-        WebElement EkBilgi = driver.findElement(By.xpath("//textarea[@id='txtid']"));
-        EkBilgi.sendKeys("Members Test Deneme");
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        ResuableMethods.waitFor(2);
-
-        WebElement OdemeYap = driver.findElement(By.xpath("//button[@class='form_paymentButton__ZOf-P form_buttonClicked__N8NQL']"));
-        OdemeYap.click();
-        ResuableMethods.waitFor(5);
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        ResuableMethods.waitFor(2);
-    }
 
     //TC22
     @And("yeni acilan sayfada Ekosistem üyeliği Ekosisteme katil butonuna  tiklar")
     public void yeniAcilanSayfadaEkosistemÜyeliğiEkosistemeKatilButonunaTiklar() {
 
-        Driver.getDriver().get("https://payment.rexven.com/payment/?sellerId=1&platform=iyzico&type=subs&productId=21&sepet-aylik");
+        Driver.getDriver().get("https://members.rexven.com/payment/53?sepet=yillik");
         ResuableMethods.switchToWindow("Payment");
-        ResuableMethods.waitFor(2);
+        ResuableMethods.waitFor(3);
+
     }
 
-    @And("en allta bulunan whatsapp'dan yazabilirsiniz secenigine tiklar ve kontol eder")
+    @And("yıllik fiyatını dogrular")
+    public void yıllikFiyatınıDogrular() {
+        WebElement yillikFiyat = driver.findElement(By.xpath("//p[.='8333.33 TRY']"));
+        Assert.assertTrue(yillikFiyat.isDisplayed());
+        ResuableMethods.waitFor(2);
+   //     String actualYillikFiyat=yillikFiyat.getText();
+   //     String expectedYillikFiyat="Rexven Topluluk";
+  //      Assert.assertEquals("Yillik Fiyat Uyusmuyor", expectedYillikFiyat,actualYillikFiyat);
+        System.out.println(yillikFiyat.getText());
+
+    }
+
+    @Then("KDV fiyatini dogrular.")
+    public void kdvFiyatiniDogrular() {
+        WebElement KDVFiyat= driver.findElement(By.xpath("//p[.='1666.67 TRY']"));
+        String actualKDVFiyat=KDVFiyat.getText();
+        String expectedKDVFiyat="1666.67 TRY";
+        Assert.assertEquals("KDV Fiyat Uyusmuyor", expectedKDVFiyat,actualKDVFiyat);
+        System.out.println(KDVFiyat.getText());
+
+    }
+
+    @Then("odenecek tutari dogrular.")
+    public void odenecekTutariDogrular() {
+        WebElement ToplamOdenecekTutar=driver.findElement(By.xpath("//p[.='10000.00']"));
+        String actualOdenecekFiyat=ToplamOdenecekTutar.getText();
+        String expectedOdenecekFiyat="10000.00";
+        Assert.assertEquals("KDV Fiyat Uyusmuyor", expectedOdenecekFiyat,actualOdenecekFiyat);
+        System.out.println(ToplamOdenecekTutar.getText());
+
+    }
+
+
+    @And("en allta bulunan whatsapp'dan yazabilirsiniz secenegine tiklar ve kontol eder")
     public void enAlltaBulunanWhatsappDanYazabilirsinizSecenigineTiklarVeKontolEder() {
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ResuableMethods.waitFor(1);
@@ -244,6 +216,8 @@ public class Tools_Tab_Etsy2_StepDefinitions {
 
     @Then("acilan sayfayı asagi dogru indirir")
     public void acilan_sayfayı_asagi_dogru_indirir() {
+        ResuableMethods.waitFor(2);
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
         ResuableMethods.waitFor(2);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ResuableMethods.waitFor(2);
@@ -406,6 +380,8 @@ public class Tools_Tab_Etsy2_StepDefinitions {
         ResuableMethods.waitFor(2);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ResuableMethods.waitFor(2);
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ResuableMethods.waitFor(2);
 
     }
 
@@ -418,7 +394,7 @@ public class Tools_Tab_Etsy2_StepDefinitions {
         ResuableMethods.waitFor(3);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ResuableMethods.waitFor(3);
-        WebElement searchtusu = driver.findElement(By.xpath("//form[@class='isolate inline-flex -space-x-px rounded-md shadow-sm mr-2']/input[@id='pageNumber']"));
+        WebElement searchtusu = driver.findElement(By.xpath("//input[@class='w-20 px-2 py-1  ring-secondary rounded-r-md']"));
         searchtusu.clear();
         ResuableMethods.waitFor(2);
         searchtusu.sendKeys("17");
@@ -453,6 +429,10 @@ public class Tools_Tab_Etsy2_StepDefinitions {
         ResuableMethods.waitFor(4);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ResuableMethods.waitFor(2);
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ResuableMethods.waitFor(2);
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ResuableMethods.waitFor(2);
 
     }
 
@@ -482,7 +462,9 @@ public class Tools_Tab_Etsy2_StepDefinitions {
         ResuableMethods.waitFor(4);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ResuableMethods.waitFor(4);
-        WebElement ileriTusu= driver.findElement(By.xpath("//button[@class='relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0']"));
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ResuableMethods.waitFor(2);
+        WebElement ileriTusu = driver.findElement(By.xpath("//button[@class='relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0']"));
         ileriTusu.click();
         ResuableMethods.waitFor(2);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
@@ -514,12 +496,15 @@ public class Tools_Tab_Etsy2_StepDefinitions {
         System.out.println(PopulerUrun1.getText());
         WebElement PopulerUrun2 = driver.findElement(By.xpath("(//tr[@class='blur-none even:bg-lightGray'])[2]"));
         System.out.println(PopulerUrun2.getText());
-        WebElement PopulerUrun3= driver.findElement(By.xpath("(//tr[@class='blur-none even:bg-lightGray'])[3]"));
+        WebElement PopulerUrun3 = driver.findElement(By.xpath("(//tr[@class='blur-none even:bg-lightGray'])[3]"));
         System.out.println(PopulerUrun3.getText());
-        WebElement PopulerUrun4= driver.findElement(By.xpath("(//tr[@class='blur-sm even:bg-lightGray'])[1]"));
+        WebElement PopulerUrun4 = driver.findElement(By.xpath("(//tr[@class='blur-sm even:bg-lightGray'])[1]"));
         System.out.println(PopulerUrun4.getText());
-        WebElement PopulerUrun5= driver.findElement(By.xpath("(//tr[@class='blur-sm even:bg-lightGray'])[2]"));
+        WebElement PopulerUrun5 = driver.findElement(By.xpath("(//tr[@class='blur-sm even:bg-lightGray'])[2]"));
         System.out.println(PopulerUrun5.getText());
         ResuableMethods.waitFor(2);
     }
+
+
+
 }

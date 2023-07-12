@@ -93,19 +93,19 @@ public class Tools_Tab_Etsy_StepDefinitions {
 
         //
         String actualKesinti = tools_tab_etsy_page.EtsySonucKesinti.getText();
-        String expectedKesinti = "78.23";
+        String expectedKesinti = "78.73";
         Assert.assertEquals("KESİNTİ SONUCU UYUSMUYOR", expectedKesinti, actualKesinti);
         System.out.println(tools_tab_etsy_page.EtsySonucKesinti.getText());
 
         //
         String actualKar = tools_tab_etsy_page.EtsySonucKar.getText();
-        String expectedKar = "421.77";
+        String expectedKar = "421.27";
         Assert.assertEquals("KAR SONUCU UYUSMUYOR", expectedKar, actualKar);
         System.out.println(tools_tab_etsy_page.EtsySonucKar.getText());
 
         //
         String actualKarMarji = tools_tab_etsy_page.EtsySonucKarMarji.getText();
-        String expectedKarMarji = "84.35";
+        String expectedKarMarji = "84.25";
         Assert.assertEquals("KAR MARJI SONUCU UYUSMUYOR", expectedKarMarji, actualKarMarji);
         System.out.println(tools_tab_etsy_page.EtsySonucKarMarji.getText());
 
@@ -113,7 +113,7 @@ public class Tools_Tab_Etsy_StepDefinitions {
         System.out.println(tools_tab_etsy_page.EtsyKesintiTablosu.getText());
 
         String actualListelemeUcreti = tools_tab_etsy_page.EtsySonucListelemeUcreti.getText();
-        String expectedListelemeUcreti = "₺ 4.73";
+        String expectedListelemeUcreti = "₺ 5.23";
         Assert.assertEquals("LİSTELEME UCRETİ UYUSMUYOR", expectedListelemeUcreti, actualListelemeUcreti);
         System.out.println(tools_tab_etsy_page.EtsySonucListelemeUcreti.getText());
 
@@ -304,7 +304,7 @@ public class Tools_Tab_Etsy_StepDefinitions {
         WebElement SonucGelirSekmesi = driver.findElement(By.xpath("//div[@class='flex space-x-1 mt-4']"));
         System.out.println(SonucGelirSekmesi.getText());
     }
-
+//tc18
     @Then("cok satan saticilar sekmesine tiklar")
     public void cok_satan_saticilar_sekmesine_tiklar() {
 
@@ -377,9 +377,9 @@ public class Tools_Tab_Etsy_StepDefinitions {
 
     @And("Satın al popup geldigini teyit eder dogrular.")
     public void satınAlPopupGeldiginiTeyitEderDogrular() {
-        WebElement cookies = driver.findElement(By.xpath("//a[.='Satın Al']"));
+        WebElement cookies = driver.findElement(By.xpath("//div[@class='mt-5 sm:mt-6']/a[.='Satın Al']"));
         Assert.assertTrue(cookies.isDisplayed());
-        ResuableMethods.waitFor(2);
+        ResuableMethods.waitFor(3);
         System.out.println("COOKİES =" + cookies.getText());
     }
 

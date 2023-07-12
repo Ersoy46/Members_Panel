@@ -81,7 +81,7 @@ public class Consultancy_StepDefinitions {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("document.body.style.zoom='65%';");
-        ResuableMethods.waitFor(10);
+        ResuableMethods.waitFor(7);
 
     }
 
@@ -115,8 +115,7 @@ public class Consultancy_StepDefinitions {
         ResuableMethods.waitFor(1);
         actions.sendKeys(Keys.TAB).perform();
         ResuableMethods.waitFor(1);
-        actions.sendKeys(faker.internet().emailAddress())
-                .sendKeys(Keys.TAB).perform();
+        actions.sendKeys("rexvendeneme@gmail.com").sendKeys(Keys.TAB).perform();
         ResuableMethods.waitFor(2);
         actions.sendKeys(faker.numerify("90"))
                 .sendKeys(Keys.TAB).perform();

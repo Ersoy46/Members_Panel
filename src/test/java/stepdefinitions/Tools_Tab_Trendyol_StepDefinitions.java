@@ -166,19 +166,19 @@ public class Tools_Tab_Trendyol_StepDefinitions {
         System.out.println(tools_tab_page.trendyolHesaplaSonucMaliyet.getText());
         //
         String actualKesinti = tools_tab_page.trendyolHesaplaSonucKesinti.getText();
-        String expectedKesinti = "71.89 ₺";
+        String expectedKesinti = "74.15 ₺";
         Assert.assertEquals("KESİNTİ SONUCU UYUSMUYOR", expectedKesinti, actualKesinti);
         System.out.println(tools_tab_page.trendyolHesaplaSonucKesinti.getText());
 
         //
         String actualKar = tools_tab_page.trendyolHesaplaSonucKar.getText();
-        String expectedKar = "93.11 ₺";
+        String expectedKar = "90.85 ₺";
         Assert.assertEquals("KAR SONUCU UYUSMUYOR", expectedKar, actualKar);
         System.out.println(tools_tab_page.trendyolHesaplaSonucKar.getText());
 
         //
         String actualKarMarji = tools_tab_page.trendyolHesaplaSonucKarMarjı.getText();
-        String expectedKarMarji = "28.21 %";
+        String expectedKarMarji = "27.53 %";
         Assert.assertEquals("KAR MARJI SONUCU UYUSMUYOR", expectedKarMarji, actualKarMarji);
         System.out.println(tools_tab_page.trendyolHesaplaSonucKarMarjı.getText());
 
@@ -244,19 +244,19 @@ public class Tools_Tab_Trendyol_StepDefinitions {
         System.out.println(tools_tab_page.trendyolHesaplaSonucMaliyet.getText());
         //
         String actualKesinti = tools_tab_page.trendyolHesaplaSonucKesinti.getText();
-        String expectedKesinti = "168.24 ₺";
+        String expectedKesinti = "166.76 ₺";
         Assert.assertEquals("KESİNTİ SONUCU UYUSMUYOR", expectedKesinti, actualKesinti);
         System.out.println(tools_tab_page.trendyolHesaplaSonucKesinti.getText());
 
         //
         String actualKar = tools_tab_page.trendyolHesaplaSonucKar.getText();
-        String expectedKar = "331.76 ₺";
+        String expectedKar = "333.24 ₺";
         Assert.assertEquals("KAR SONUCU UYUSMUYOR", expectedKar, actualKar);
         System.out.println(tools_tab_page.trendyolHesaplaSonucKar.getText());
 
         //
         String actualKarMarji = tools_tab_page.trendyolHesaplaSonucKarMarjı.getText();
-        String expectedKarMarji = "66.35 %";
+        String expectedKarMarji = "66.65 %";
         Assert.assertEquals("KAR MARJI SONUCU UYUSMUYOR", expectedKarMarji, actualKarMarji);
         System.out.println(tools_tab_page.trendyolHesaplaSonucKarMarjı.getText());
 

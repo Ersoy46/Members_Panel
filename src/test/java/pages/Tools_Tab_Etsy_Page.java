@@ -15,7 +15,7 @@ public class Tools_Tab_Etsy_Page {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//nav[@class='flex-1 space-y-1 px-2 py-4']/div[@class='space-y-1']//p[@class='w-full flex justify-between items-center ']")
+    @FindBy(xpath = "//nav[@class='flex-1 space-y-1 px-2 py-4']//p[contains(.,'Etsy')]")
     public WebElement EtsySekmesi;
 
     @FindBy(xpath = "//a[contains(.,'- Kar Hesaplama')]")
@@ -61,19 +61,19 @@ public class Tools_Tab_Etsy_Page {
     @FindBy(xpath = "//div[@class='flex space-x-1 mt-4']/div[2]//p[@class='mb-1 font-bold text-xs xl:text-sm']")
     public WebElement EtsySonucMaaliyet;
 
-    @FindBy(xpath = "//p[contains(.,'78.23')]")
+    @FindBy(xpath = "//p[contains(.,'78.73')]")
     public WebElement EtsySonucKesinti;
 
-    @FindBy(xpath = "//p[contains(.,'421.77')]")
+    @FindBy(xpath = "//p[contains(.,'421.27')]")
     public WebElement EtsySonucKar;
 
-    @FindBy(xpath = "//p[contains(.,'84.35')]")
+    @FindBy(xpath = "//p[contains(.,'84.25')]")
     public WebElement EtsySonucKarMarji;
 
     @FindBy(xpath = "//h1[@class='w-full border border-[#FF9E66] text-xl font-bold text-[#F45900] text-center rounded-sm bg-[#FFDFCC] p-1 mb-2']")
     public  WebElement EtsyKesintiTablosu;
 
-    @FindBy(xpath = "//p[.='₺ 4.73']")
+    @FindBy(xpath = "//p[.='₺ 5.23']")
     public WebElement EtsySonucListelemeUcreti;
 
     @FindBy(xpath = "//p[.='₺ 32.5']")
@@ -155,20 +155,18 @@ public class Tools_Tab_Etsy_Page {
 @FindBy(xpath = "//button[@class='col-span-12 w-1-2 px-4 py-2 text-sm lg:w-3/12 lg:text-base my-2 mx-auto text-white font-bold rounded-md  bg-headerPrimary    flex items-center justify-center']")
     public WebElement FiltreleriUygulaSekmesi;
 
-    @FindBy(xpath = "//a[.='Satın Al']")
+    @FindBy(xpath = "//div[@class='mt-5 sm:mt-6']/a[.='Satın Al']")
     public WebElement EtsySatinAl;
 
     @FindBy(xpath = "//label[.='Yıllık']")
     public WebElement EkosistemYillikPaket;
 
-    @FindBy(xpath = "//a[@href='https://members.rexven.com/register']")
+    @FindBy(xpath = "//li[@class='elementor-repeater-item-961ac57']//li[@class='pricing-box yearly-box is-visible popular badge-1 ']//a[.='Ücretsiz Katıl']")
     public WebElement EkosistemUcretsizUyelik;
 
-    @FindBy(xpath = "(//div[@class='pricing-footer'])[3]")
+    @FindBy(xpath = "//li[@class='elementor-repeater-item-1f4b8d0']//li[@class='pricing-box yearly-box is-visible popular badge-1 ']//a[.='Ekosisteme Katıl']")
     public WebElement EkosistemeKatilPaketi;
 
-    @FindBy(xpath = "//span[.='SSL Güvenli Ödeme']")
-    public WebElement SSLGuvenliOdeme;
 
     @FindBy(xpath = "//a[.='Ödeme adımında sorun yaşıyorsanız WhatsApp’tan yazabilirsiniz.']")
     public WebElement whatsappsekmesi;

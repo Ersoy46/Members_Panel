@@ -9,7 +9,7 @@
       Then  gecerli mail adresi girer
       And  gecerli password girer
       Then Egitimler sekmesine tiklar
-      When  sayfayi asagi indirir 8 adet egitim oldugunu teyit eder konsola yazdidir
+      When  sayfayi asagi indirir 10 adet egitim oldugunu teyit eder konsola yazdidir
 
     @tc38
     Scenario: TC38

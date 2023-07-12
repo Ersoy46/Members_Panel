@@ -228,11 +228,15 @@ public class DashboardStepDefinitions {
         actions.sendKeys(Keys.PAGE_UP)
                 .sendKeys(Keys.PAGE_UP).perform();
         ResuableMethods.waitFor(2);
+        actions.sendKeys(Keys.PAGE_UP)
+                .sendKeys(Keys.PAGE_UP).perform();
+        ResuableMethods.waitFor(3);
+
 
     }
     @Then("indirim al butonuna tıklar ve tamam sekmesine tıklar")
     public void indirim_al_butonuna_tıklar_ve_tamam_sekmesine_tıklar() {
-        WebElement ifasTurkİndirimAl = driver.findElement(By.xpath("//div[@class='bg-white p-6 grid gap-6 overflow-hidden text-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 min-[2000px]:grid-cols-5 rounded-2xl']/div[1]//span[@class='flex']"));
+        WebElement ifasTurkİndirimAl = driver.findElement(By.xpath("//div[@class='bg-white p-6 grid gap-4 overflow-hidden text-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 min-[2000px]:grid-cols-5 rounded-2xl']/div[1]//span[@class='flex']"));
 
         ifasTurkİndirimAl.click();
         ResuableMethods.waitFor(2);
