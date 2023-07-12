@@ -136,27 +136,32 @@ public class DashboardStepDefinitions {
 
         Actions actions = new Actions(Driver.getDriver());
         Faker faker = new Faker();
+        String fixedFirstName = "Ertuğrul";
+        String fixedLastName = "Ersoy";
+        String fixedCity = "İstanbul";
+        String fixedCountry = "Türkiye";
+        String fixedPhoneNumber = "542 542 42 42";
 
         actions.sendKeys(faker.lorem().sentence())
                 .sendKeys(Keys.TAB)
-                .sendKeys(faker.name().firstName()).perform();
+                .sendKeys(fixedFirstName).perform();
         ResuableMethods.waitFor(2);
         actions.sendKeys(Keys.TAB)
-                .sendKeys(faker.name().lastName())
+                .sendKeys(fixedLastName)
                 .sendKeys(Keys.TAB)
                 .sendKeys(faker.address().streetAddress())
                 .sendKeys(Keys.TAB).perform();
         ResuableMethods.waitFor(3);
         actions.sendKeys(faker.address().secondaryAddress())
                 .sendKeys(Keys.TAB)
-                .sendKeys(faker.address().city())
+                .sendKeys(fixedCity)
                 .sendKeys(Keys.TAB).perform();
         ResuableMethods.waitFor(3);
-        actions.sendKeys(faker.address().country())
+        actions.sendKeys(fixedCountry)
                 .sendKeys(Keys.TAB)
                 .sendKeys(faker.address().zipCode())
                 .sendKeys(Keys.TAB)
-                .sendKeys(faker.phoneNumber().phoneNumber())
+                .sendKeys(fixedPhoneNumber)
                 .sendKeys(Keys.TAB).perform();
         ResuableMethods.waitFor(3);
         actions.sendKeys(faker.numerify("12345678901"))
@@ -169,6 +174,8 @@ public class DashboardStepDefinitions {
                 .sendKeys(Keys.PAGE_DOWN).perform();
 
         ResuableMethods.waitFor(3);
+
+
 
     }
 
