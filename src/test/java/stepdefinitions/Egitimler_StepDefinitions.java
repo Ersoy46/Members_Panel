@@ -680,7 +680,7 @@ public class Egitimler_StepDefinitions {
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ResuableMethods.waitFor(2);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
-        ResuableMethods.waitFor(2);
+        ResuableMethods.waitFor(3);
 
         egitimler_page.CanliEgitimKayitlariUcretli.click();
         ResuableMethods.waitFor(10);
