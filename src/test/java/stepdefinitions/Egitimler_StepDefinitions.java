@@ -706,7 +706,7 @@ public class Egitimler_StepDefinitions {
     public void videoIcerisindeBulunanDigerEgitimlerinAcıldiginıTeyitEder() {
         WebElement RexvenTanismaToplantisi = driver.findElement(By.xpath("(//span[@class='text-sm pl-2'])[2]"));
         RexvenTanismaToplantisi.click();
-        ResuableMethods.waitFor(4);
+        ResuableMethods.waitFor(3);
         String RexvenTanismaToplantisiDuration = RexvenTanismaToplantisi.getText();
 
         if (RexvenTanismaToplantisiDuration.equals("0 dk")) {
@@ -730,7 +730,7 @@ public class Egitimler_StepDefinitions {
 
         WebElement AmazonVeEtsyIsModelleri = driver.findElement(By.xpath("(//span[@class='text-sm pl-2'])[4]"));
         AmazonVeEtsyIsModelleri.click();
-        ResuableMethods.waitFor(4);
+        ResuableMethods.waitFor(3);
         String AmazonVeEtsyIsModelleriDuration = AmazonVeEtsyIsModelleri.getText();
 
         if (AmazonVeEtsyIsModelleriDuration.equals("0 dk")) {
