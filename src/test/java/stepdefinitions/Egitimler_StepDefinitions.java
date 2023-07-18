@@ -754,7 +754,7 @@ public class Egitimler_StepDefinitions {
 
         WebElement EmparazonIleUygulamaliAmazonUrunArastirma = driver.findElement(By.xpath("(//span[@class='text-sm pl-2'])[6]"));
         EmparazonIleUygulamaliAmazonUrunArastirma.click();
-        ResuableMethods.waitFor(12);
+        ResuableMethods.waitFor(11);
         String EmparazonIleUygulamaliAmazonUrunArastirmaDuration = EmparazonIleUygulamaliAmazonUrunArastirma.getText();
 
         if (EmparazonIleUygulamaliAmazonUrunArastirmaDuration.equals("0 dk")) {
