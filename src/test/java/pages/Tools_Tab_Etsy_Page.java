@@ -61,19 +61,19 @@ public class Tools_Tab_Etsy_Page {
     @FindBy(xpath = "//div[@class='flex space-x-1 mt-4']/div[2]//p[@class='mb-1 font-bold text-xs xl:text-sm']")
     public WebElement EtsySonucMaaliyet;
 
-    @FindBy(xpath = "//p[contains(.,'78.72')]")
+    @FindBy(xpath = "//p[contains(.,'78.88')]")
     public WebElement EtsySonucKesinti;
 
-    @FindBy(xpath = "//p[contains(.,'421.28')]")
+    @FindBy(xpath = "//p[contains(.,'421.12')]")
     public WebElement EtsySonucKar;
 
-    @FindBy(xpath = "//p[contains(.,'84.26')]")
+    @FindBy(xpath = "//p[contains(.,'84.22')]")
     public WebElement EtsySonucKarMarji;
 
     @FindBy(xpath = "//h1[@class='w-full border border-[#FF9E66] text-xl font-bold text-[#F45900] text-center rounded-sm bg-[#FFDFCC] p-1 mb-2']")
     public  WebElement EtsyKesintiTablosu;
 
-    @FindBy(xpath = "//p[.='₺ 5.22']")
+    @FindBy(xpath = "//p[.='₺ 5.38']")
     public WebElement EtsySonucListelemeUcreti;
 
     @FindBy(xpath = "//p[.='₺ 32.5']")

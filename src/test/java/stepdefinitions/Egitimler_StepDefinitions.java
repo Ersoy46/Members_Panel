@@ -85,8 +85,13 @@ public class Egitimler_StepDefinitions {
 
     @When("amazon baslangic egitimine tiklar")
     public void amazon_baslangic_egitimine_tiklar() {
-        egitimler_page.AmazonBaslangicEgitimi.click();
-        ResuableMethods.waitFor(8);
+        egitimler_page.UcretsizAmazonEgtimi.click();
+        ResuableMethods.waitFor(5);
+
+WebElement videoOynatma=driver.findElement(By.xpath("//video[@id='videoPlayer']"));
+videoOynatma.click();
+        ResuableMethods.waitFor(5);
+
 
 
         // video elementini locate etmek için uygun bir locator kullanın
@@ -180,8 +185,11 @@ public class Egitimler_StepDefinitions {
     //TC39
     @When("Etsy baslangic egitimine tiklar")
     public void etsyBaslangicEgitimineTiklar() {
-        egitimler_page.EtsyBaslangicEgitimi.click();
-        ResuableMethods.waitFor(8);
+        egitimler_page.UcretsizEtsyEgitimi.click();
+        ResuableMethods.waitFor(5);
+        WebElement videoOynatma=driver.findElement(By.xpath("//video[@id='videoPlayer']"));
+        videoOynatma.click();
+        ResuableMethods.waitFor(5);
 
 
         // video elementini locate etmek için uygun bir locator kullanın
@@ -271,7 +279,10 @@ public class Egitimler_StepDefinitions {
     @When("İKAS baslangic egitimine tiklar")
     public void ikasBaslangicEgitimineTiklar() {
         egitimler_page.ikasBaslangicEgitimi.click();
-        ResuableMethods.waitFor(8);
+        ResuableMethods.waitFor(5);
+        WebElement videoOynatma=driver.findElement(By.xpath("//video[@id='videoPlayer']"));
+        videoOynatma.click();
+        ResuableMethods.waitFor(5);
 
         // video elementini locate etmek için uygun bir locator kullanın
         WebElement video = driver.findElement(By.xpath("//video[@id='videoPlayer']"));
@@ -400,7 +411,34 @@ public class Egitimler_StepDefinitions {
     }
 
     //TC44
+    @Then("sayfayi asagi indirir ve Amazon Uzmani egtimine tiklar")
+    public void sayfayiAsagiIndirirVeAmazonUzmaniEgtimineTiklar() {
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ResuableMethods.waitFor(2);
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ResuableMethods.waitFor(2);
+        egitimler_page.AmazonUzmaniUcretli.click();
+        ResuableMethods.waitFor(5);
+        WebElement videoOynatma=driver.findElement(By.xpath("//video[@id='videoPlayer']"));
+        videoOynatma.click();
+        ResuableMethods.waitFor(5);
 
+        // video elementini locate etmek için uygun bir locator kullanın
+        WebElement video = driver.findElement(By.xpath("//video[@id='videoPlayer']"));
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        // Video oynatma durumunu kontrol et
+        String isVideoPlayed = js.executeScript("return arguments[0].played.length>0", video).toString();
+
+        if (isVideoPlayed.equals("true")) {
+            System.out.println("VİDEO İS PLAYED");
+        } else {
+            System.out.println("VİDEO İS NOT PLAYED");
+            // Hata oluştuğunda exception fırlat
+            throw new RuntimeException("Video playback failed");
+        }
+    }
     @And("Video icerisinde bulunan diger diger egitimlerin acildigini teyit eder")
     public void videoIcerisindeBulunanDigerDigerEgitimlerinAcildiginiTeyitEder() {
         WebElement UreticilerIcinYolHaritasi = driver.findElement(By.xpath("(//span[@class='text-sm pl-2'])[2]"));
@@ -538,6 +576,9 @@ public class Egitimler_StepDefinitions {
 
         egitimler_page.TrendyolMasterUcretli.click();
         ResuableMethods.waitFor(6);
+        WebElement videoOynatma=driver.findElement(By.xpath("//video[@id='videoPlayer']"));
+        videoOynatma.click();
+        ResuableMethods.waitFor(5);
 
         // video elementini locate etmek için uygun bir locator kullanın
         WebElement video = driver.findElement(By.xpath("//video[@id='videoPlayer']"));
@@ -630,6 +671,11 @@ public class Egitimler_StepDefinitions {
         egitimler_page.AmazonMasterUcretli.click();
         ResuableMethods.waitFor(6);
 
+        WebElement videoOynatma=driver.findElement(By.xpath("//video[@id='videoPlayer']"));
+        videoOynatma.click();
+        ResuableMethods.waitFor(5);
+
+
         // video elementini locate etmek için uygun bir locator kullanın
         WebElement video = driver.findElement(By.xpath("//video[@id='videoPlayer']"));
 
@@ -648,31 +694,7 @@ public class Egitimler_StepDefinitions {
 
     }
 
-    @Then("sayfayi asagi indirir ve Amazon Uzmani egtimine tiklar")
-    public void sayfayiAsagiIndirirVeAmazonUzmaniEgtimineTiklar() {
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        ResuableMethods.waitFor(2);
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        ResuableMethods.waitFor(2);
-        egitimler_page.AmazonUzmaniUcretli.click();
-        ResuableMethods.waitFor(6);
 
-        // video elementini locate etmek için uygun bir locator kullanın
-        WebElement video = driver.findElement(By.xpath("//video[@id='videoPlayer']"));
-
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-
-        // Video oynatma durumunu kontrol et
-        String isVideoPlayed = js.executeScript("return arguments[0].played.length>0", video).toString();
-
-        if (isVideoPlayed.equals("true")) {
-            System.out.println("VİDEO İS PLAYED");
-        } else {
-            System.out.println("VİDEO İS NOT PLAYED");
-            // Hata oluştuğunda exception fırlat
-            throw new RuntimeException("Video playback failed");
-        }
-    }
 
     //TC47
     @Then("sayfayi asagi indirir ve Canli Egitim Kayitlarina tiklar")
@@ -683,7 +705,10 @@ public class Egitimler_StepDefinitions {
         ResuableMethods.waitFor(2);
 
         egitimler_page.CanliEgitimKayitlariUcretli.click();
-        ResuableMethods.waitFor(10);
+        ResuableMethods.waitFor(5);
+        WebElement videoOynatma=driver.findElement(By.xpath("//video[@id='videoPlayer']"));
+        videoOynatma.click();
+        ResuableMethods.waitFor(5);
 
         // video elementini locate etmek için uygun bir locator kullanın
         WebElement video = driver.findElement(By.xpath("//video[@id='videoPlayer']"));

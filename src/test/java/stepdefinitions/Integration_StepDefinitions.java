@@ -27,7 +27,7 @@ public class Integration_StepDefinitions {
     public void entegrasyon_sekmesine_tiklar() {
         ResuableMethods.waitFor(2);
         integration_page.EntegrasyonSekmesi.click();
-        ResuableMethods.waitFor(2);
+        ResuableMethods.waitFor(4);
     }
 
     @Then("Entegrasyon ayarlari kısmında bulunan bilgileri girer ve kayit ol der")

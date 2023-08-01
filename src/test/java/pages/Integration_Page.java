@@ -11,7 +11,7 @@ public class Integration_Page {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//a[.='Entegrasyon']")
+    @FindBy(css = ".bg-secondary")
     public WebElement EntegrasyonSekmesi;
 
     @FindBy(xpath = "//input[@id='sellerId']")

@@ -25,7 +25,7 @@ public class Producer_Page {
     @FindBy(xpath = "//button[@class='relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0']")
     public WebElement urunlerSayfaIlerle;
 
-    @FindBy(xpath = "//button[@class='text-sm lg:text-sm w-full border-2 py-2  xl:px-4 text-white bg-headerPrimary border-headerPrimary rounded-md']")
+    @FindBy(xpath = "//div[@class='grid grid-cols-8 gap-x-4 gap-y-2 lg:gap-y-0']/div[.='Üretici - Toptancı Ol']")
     public WebElement producerUreticiveyaToptancıOl;
 
     @FindBy(xpath = "//input[@id='isKvkkAccepted']")

@@ -12,7 +12,7 @@ public class Tools_Tab_Page {
     }
 
 
-    @FindBy(xpath = "//button[.='Trendyol']")
+    @FindBy(xpath = "//button[contains(.,'Trendyol')]")
     public WebElement trendyolSekmesi;
 
     @FindBy(xpath = "//a[.='-Kar Hesaplama']")
