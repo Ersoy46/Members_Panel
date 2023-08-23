@@ -31,7 +31,7 @@ Feature: Üretici ve Toptancılar
     Given kullanıcı members.rexven.com sayfasına gider
     Then  gecerli mail adresi girer
     And  gecerli password girer
-    And  uretici ve toptancılar sekmesine tıklar
+    And  uretici ve toptancılar sekmesine tıklar 
     And search butonuna eşofman yazar
     Then ara sekmesine tıklar
     And Mossi isimli firmanın urunleri incele sekmesine tıklar

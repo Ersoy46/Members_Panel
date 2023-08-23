@@ -32,6 +32,7 @@ public class Integration_StepDefinitions {
 
     @Then("Entegrasyon ayarlari kısmında bulunan bilgileri girer ve kayit ol der")
     public void entegrasyon_ayarlari_kısmında_bulunan_bilgileri_girer_ve_kayit_ol_der() {
+        ResuableMethods.waitFor(2);
         integration_page.SaticiID.sendKeys("258963147231");
         ResuableMethods.waitFor(1);
         integration_page.ApiKey.sendKeys("14785298741144");

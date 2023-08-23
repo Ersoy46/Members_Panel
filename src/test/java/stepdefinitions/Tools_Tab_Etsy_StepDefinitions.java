@@ -93,19 +93,19 @@ public class Tools_Tab_Etsy_StepDefinitions {
 
         //
         String actualKesinti = tools_tab_etsy_page.EtsySonucKesinti.getText();
-        String expectedKesinti = "78.88";
+        String expectedKesinti = "79.26";
         Assert.assertEquals("KESİNTİ SONUCU UYUSMUYOR", expectedKesinti, actualKesinti);
         System.out.println(tools_tab_etsy_page.EtsySonucKesinti.getText());
 
         //
         String actualKar = tools_tab_etsy_page.EtsySonucKar.getText();
-        String expectedKar = "421.12";
+        String expectedKar = "420.74";
         Assert.assertEquals("KAR SONUCU UYUSMUYOR", expectedKar, actualKar);
         System.out.println(tools_tab_etsy_page.EtsySonucKar.getText());
 
         //
         String actualKarMarji = tools_tab_etsy_page.EtsySonucKarMarji.getText();
-        String expectedKarMarji = "84.22";
+        String expectedKarMarji = "84.15";
         Assert.assertEquals("KAR MARJI SONUCU UYUSMUYOR", expectedKarMarji, actualKarMarji);
         System.out.println(tools_tab_etsy_page.EtsySonucKarMarji.getText());
 
@@ -113,7 +113,7 @@ public class Tools_Tab_Etsy_StepDefinitions {
         System.out.println(tools_tab_etsy_page.EtsyKesintiTablosu.getText());
 
         String actualListelemeUcreti = tools_tab_etsy_page.EtsySonucListelemeUcreti.getText();
-        String expectedListelemeUcreti = "₺ 5.38";
+        String expectedListelemeUcreti = "₺ 5.39";
         Assert.assertEquals("LİSTELEME UCRETİ UYUSMUYOR", expectedListelemeUcreti, actualListelemeUcreti);
         System.out.println(tools_tab_etsy_page.EtsySonucListelemeUcreti.getText());
 

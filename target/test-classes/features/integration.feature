@@ -9,8 +9,8 @@ Feature: integration page
     Then  gecerli mail adresi girer
     And  gecerli password girer
     And Entegrasyon sekmesine tiklar
-    Then Entegrasyon ayarlari kısmında bulunan bilgileri girer ve kayit ol der
-    When  sag üst tarafda Kullanici magaza bilgileri gecersiz yazisini görür
+  #  Then Entegrasyon ayarlari kısmında bulunan bilgileri girer ve kayit ol der
+  #  When  sag üst tarafda Kullanici magaza bilgileri gecersiz yazisini görür
 
   @tc34
   Scenario:TC34

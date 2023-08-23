@@ -139,6 +139,9 @@ public class Uretici_Toptancı_StepDefinitions {
 
     @Then("Mossi isimli firmanın urunleri incele sekmesine tıklar")
     public void mossi_isimli_firmanın_urunleri_incele_sekmesine_tıklar() {
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ResuableMethods.waitFor(3);
         producer_page.firmaMossiUrunIncele.click();
         ResuableMethods.waitFor(5);
 

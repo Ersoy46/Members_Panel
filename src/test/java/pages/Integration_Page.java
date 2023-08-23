@@ -11,10 +11,10 @@ public class Integration_Page {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(css = ".bg-secondary")
+    @FindBy(xpath = "//a[@class='bg-secondary text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md']")
     public WebElement EntegrasyonSekmesi;
 
-    @FindBy(xpath = "//input[@id='sellerId']")
+    @FindBy(xpath = "(//div[@class='flex justify-between items-center gap-x-3 sm:gap-x-1.5'])[1]")
     public WebElement SaticiID;
 
     @FindBy(xpath = "//input[@id='apiKey']")

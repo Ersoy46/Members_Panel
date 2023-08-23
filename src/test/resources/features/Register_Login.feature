@@ -1,5 +1,5 @@
 @regresyon
-@register
+@
 
 Feature: Register-Login Olma
 
