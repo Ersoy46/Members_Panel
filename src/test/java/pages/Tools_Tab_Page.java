@@ -51,13 +51,13 @@ public class Tools_Tab_Page {
     @FindBy(xpath = "(//div[@class='mb-1 font-bold'])[2]")
     public WebElement trendyolHesaplaSonucMaliyet;
 
-    @FindBy(xpath = "(//div[@class='mb-1 font-bold'])[3]")
+    @FindBy(xpath = "//div[@class='grid grid-cols-5 gap-2 mt-4']//div[@class='flex flex-col items-center text-center mx-auto py-3']/div[contains(.,'74.15 ₺')]")
     public WebElement trendyolHesaplaSonucKesinti;
 
-    @FindBy(xpath = "(//div[@class='mb-1 font-bold'])[4]")
+    @FindBy(xpath = "//div[@class='grid grid-cols-5 gap-2 mt-4']//div[@class='flex flex-col items-center text-center mx-auto py-3']/div[contains(.,'90.85 ₺')]")
     public WebElement trendyolHesaplaSonucKar;
 
-    @FindBy(xpath = "(//div[@class='mb-1 font-bold'])[5]")
+    @FindBy(xpath = "//div[@class='grid grid-cols-5 gap-2 mt-4']//div[@class='flex flex-col items-center text-center mx-auto py-3']/div[contains(.,'27.53 %')]")
     public WebElement trendyolHesaplaSonucKarMarjı;
 
     @FindBy(xpath = "//div[@class='mt-1 mb-4 flex flex-col gap-y-[2px] ']")
