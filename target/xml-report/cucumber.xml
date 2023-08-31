@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="2,228.745" tests="61" skipped="0" failures="4" errors="0">
-<testcase classname="Danışmanlık Bölümü" name="TC11" time="22.965">
+<testsuite name="Cucumber" time="2,269.876" tests="61" skipped="0" failures="2" errors="0">
+<testcase classname="Danışmanlık Bölümü" name="TC11" time="24.561">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -9,7 +9,7 @@ And Danısmanlik sekmesine tiklar............................................pas
 Then 3 tane danismanlik paketinin oldugunu kontrol eder.....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Danışmanlık Bölümü" name="TC12" time="35.297">
+<testcase classname="Danışmanlık Bölümü" name="TC12" time="35.257">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -20,7 +20,7 @@ And sayfayı asagi indirip Rexven Exclusive paketindeki avantajlari görüntüle
 And sayfayı asagİ indirip ETSY paketindeki avantajlari görüntüleye tıklar...passed
 ]]></system-out>
 </testcase>
-<testcase classname="Danışmanlık Bölümü" name="TC13" time="82.946">
+<testcase classname="Danışmanlık Bölümü" name="TC13" time="82.773">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -33,7 +33,7 @@ And bütce sekmesinde 0-1000$ isaretler ve formu gönder yazısını görür....
 And 5000-10000$ sekmesine tıklar ve acilan sayfada randevu al butonuna tıklar.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Members Home Page" name="TC01" time="27.689">
+<testcase classname="Members Home Page" name="TC01" time="27.107">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -44,7 +44,7 @@ When Ad Soyad bölümüne gerekli bilgileri girer..............................p
 Then Onayla der ve sayfayı kapatır..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Members Home Page" name="TC02" time="30.992">
+<testcase classname="Members Home Page" name="TC02" time="30.824">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -54,7 +54,7 @@ And dashboard da bulunan entegrasyon butonuna tıklar........................pas
 And sayfayı aşagı kaydırır entegrasyon videosunun çalıştığını teyit eder....passed
 ]]></system-out>
 </testcase>
-<testcase classname="Members Home Page" name="TC03" time="49.714">
+<testcase classname="Members Home Page" name="TC03" time="43.042">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -66,7 +66,7 @@ Then buradaki bilgileri doldurur ve onayla sekmesine tıklar.................pas
 And sayfayı küçülterek ekran kaydı alır.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Members Home Page" name="TC04" time="23.357">
+<testcase classname="Members Home Page" name="TC04" time="23.341">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -76,7 +76,7 @@ And yeni açılan pencereye gider ve  hayır,teşekkürler sekmesine tıklar....
 And sayfayı kapatır.........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Members Home Page" name="TC05" time="41.208">
+<testcase classname="Members Home Page" name="TC05" time="41.099">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -86,7 +86,7 @@ And sayfayı aşagı kaydırır ve tüm hizmet saglayıcıları görür.........
 Then indirim al butonuna tıklar ve tamam sekmesine tıklar...................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Ekitaplar Page" name="TC48" time="19.267">
+<testcase classname="Ekitaplar Page" name="TC48" time="19.107">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -95,7 +95,7 @@ Given E-Kitaplar sekmesine tiklar...........................................pass
 Then 4 adet E-Kitap oldugunu teyit eder ve isimlerini yazdirir..............passed
 ]]></system-out>
 </testcase>
-<testcase classname="Ekitaplar Page" name="TC49" time="20.838">
+<testcase classname="Ekitaplar Page" name="TC49" time="20.692">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -105,7 +105,7 @@ And Amazonda Yol Haritasi Ekitabina tiklar ve indirir.......................pass
 And İndirilen Kitabı acip dogru indigini teyit eder.........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Ekitaplar Page" name="TC50" time="34.194">
+<testcase classname="Ekitaplar Page" name="TC50" time="33.689">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -115,7 +115,7 @@ And Amazon Egitimi Ekitabina tiklar ve indirir..............................pass
 And İndirilen Kitabı acıp dogru indigini teyit eder.........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Ekitaplar Page" name="TC51" time="20.034">
+<testcase classname="Ekitaplar Page" name="TC51" time="20.25">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -125,7 +125,7 @@ And A dan Z ye Trendyol Egitimine tiklar ve indirir.........................pass
 And İndirilen Kitabi acip dogru indigini teyit eder.........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Ekitaplar Page" name="TC52" time="23.292">
+<testcase classname="Ekitaplar Page" name="TC52" time="23.445">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -135,7 +135,7 @@ And Sayfayi asagi indirip Etsy Kurallar Rehberi Egitimine tiklar ve indirir.pass
 And İndirilen EKitabi acip dogru indigini teyit eder........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Egitimler Page" name="TC37" time="22.381">
+<testcase classname="Egitimler Page" name="TC37" time="22.179">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -144,7 +144,7 @@ Then Egitimler sekmesine tiklar.............................................pass
 When sayfayi asagi indirir 10 adet egitim oldugunu teyit eder konsola yazdidir.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Egitimler Page" name="TC38" time="44.762">
+<testcase classname="Egitimler Page" name="TC38" time="44.263">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -154,7 +154,7 @@ When amazon baslangic egitimine tiklar......................................pass
 And Video iceriginde bulunan diger egitimlerin calistigini teyit eder.......passed
 ]]></system-out>
 </testcase>
-<testcase classname="Egitimler Page" name="TC39" time="45.563">
+<testcase classname="Egitimler Page" name="TC39" time="45.439">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -164,7 +164,7 @@ When Etsy baslangic egitimine tiklar........................................pass
 And Video iceriginde bulunan diger egitimlerin dogru calistigini teyit eder.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Egitimler Page" name="TC40" time="36.445">
+<testcase classname="Egitimler Page" name="TC40" time="36.572">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -174,7 +174,7 @@ When İKAS baslangic egitimine tiklar........................................pas
 And Video icerisinde bulunan diger diger egitimlerin dogru calistigini teyit eder.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Egitimler Page" name="TC41" time="20.899">
+<testcase classname="Egitimler Page" name="TC41" time="20.858">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -184,7 +184,7 @@ Then sayfayi asagi indirir ve Amazon master egtimine tiklar.................pass
 And Aktif üye olmadığınız için egitimlerden faydalanamazsınız yazisini görür ve kapatir.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Egitimler Page" name="TC42" time="22.111">
+<testcase classname="Egitimler Page" name="TC42" time="22.334">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -194,7 +194,7 @@ Then sayfayi asagi indirir ve Amazon Uzmanı egtimine tiklar.................pas
 And Aktif üye olmadığınız için egitimlerden faydalanamazsınız yazisini görür ve kapatir.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Egitimler Page" name="TC43" time="50.199">
+<testcase classname="Egitimler Page" name="TC43" time="37.787">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -204,7 +204,7 @@ Then sayfayi asagi indirir ve Etsy master egitimine tiklar..................pass
 And Satin al sekmesine tiklar Payment Sayfasina yönlendirdigini kontrol eder.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Egitimler Page" name="TC44" time="49.726">
+<testcase classname="Egitimler Page" name="TC44" time="49.952">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli ücretli üyelik mail adresi girer...............................passed
@@ -214,7 +214,7 @@ Then sayfayi asagi indirir ve Amazon master egitimine tiklar................pass
 And Video icerisinde bulunan diger diger egitimlerin acildigini teyit eder..passed
 ]]></system-out>
 </testcase>
-<testcase classname="Egitimler Page" name="TC45" time="48.513">
+<testcase classname="Egitimler Page" name="TC45" time="48.719">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli ücretli üyelik mail adresi girer...............................passed
@@ -224,7 +224,7 @@ Then sayfayi asagi indirir ve Amazon Uzmani egtimine tiklar.................pass
 And Video icerisinde bulunan diger diger egitimlerin acildigıni teyit eder..passed
 ]]></system-out>
 </testcase>
-<testcase classname="Egitimler Page" name="TC46" time="49.585">
+<testcase classname="Egitimler Page" name="TC46" time="49.834">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli ücretli üyelik mail adresi girer...............................passed
@@ -234,7 +234,7 @@ Then sayfayi asagi indirir ve Trendyol Master egitimine tiklar..............pass
 And Video icerisinde bulunan diger egitimlerin acildiginı teyit eder........passed
 ]]></system-out>
 </testcase>
-<testcase classname="Egitimler Page" name="TC47" time="55.733">
+<testcase classname="Egitimler Page" name="TC47" time="55.494">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli ücretli üyelik mail adresi girer...............................passed
@@ -244,14 +244,14 @@ Then sayfayi asagi indirir ve Canli Egitim Kayitlarina tiklar...............pass
 And Video icerisinde bulunan diger egitimlerin acıldiginı teyit eder........passed
 ]]></system-out>
 </testcase>
-<testcase classname="Register-Login Olma" name="TC55" time="10.472">
+<testcase classname="Register-Login Olma" name="TC55" time="10.013">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
 And gecerli password girer..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Register-Login Olma" name="TC56" time="13.811">
+<testcase classname="Register-Login Olma" name="TC56" time="14.013">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -259,55 +259,15 @@ And gecersiz password girer.................................................pass
 Then yanlis sifre ve mail yazisini görür....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Register-Login Olma" name="TC57" time="9.883">
-<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class='Toastify__toast-body']/div[.='Incorrect email or password']&quot;}
-  (Session info: chrome=116.0.5845.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c98347676a6bb6cf5b52909bd3ca93b2, findElement {using=xpath, value=//div[@class='Toastify__toast-body']/div[.='Incorrect email or password']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ERTURU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59600}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59600/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c98347676a6bb6cf5b52909bd3ca93b2">
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='Toastify__toast-body']/div[.='Incorrect email or password']"}
-  (Session info: chrome=116.0.5845.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c98347676a6bb6cf5b52909bd3ca93b2, findElement {using=xpath, value=//div[@class='Toastify__toast-body']/div[.='Incorrect email or password']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ERTURU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59600}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59600/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c98347676a6bb6cf5b52909bd3ca93b2
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy24.getText(Unknown Source)
-	at stepdefinitions.Register_Login_StepDefinitions.yanlisSifreVeMailYazisıniGörür(Register_Login_StepDefinitions.java:46)
-	at ✽.yanlis sifre ve mail yazisıni görür(file:///C:/Users/Ertuğrul/IdeaProjects/Members_Panel/src/test/resources/features/Register_Login.feature:25)
-]]>
-</failure>
+<testcase classname="Register-Login Olma" name="TC57" time="12.117">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecersiz mail adresi girer.............................................passed
 And gecerli password girer..................................................passed
-Then yanlis sifre ve mail yazisıni görür....................................failed
+Then yanlis sifre ve mail yazisıni görür....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Register-Login Olma" name="TC58" time="12.492">
+<testcase classname="Register-Login Olma" name="TC58" time="11.813">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecersiz mail adresi girer.............................................passed
@@ -315,7 +275,7 @@ And gecersiz password girer.................................................pass
 Then yanlis sifre ve mail yazısini görür....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Register-Login Olma" name="TC59" time="17.588">
+<testcase classname="Register-Login Olma" name="TC59" time="17.375">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then kayit ol sekmesine tiklar..............................................passed
@@ -323,7 +283,7 @@ And gelen sayfada gerekli bilgileri doldurur................................pass
 Then bu email kullanılyor yazisini görür....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Register-Login Olma" name="TC60" time="20.073">
+<testcase classname="Register-Login Olma" name="TC60" time="19.914">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then kayit ol sekmesine tiklar..............................................passed
@@ -332,7 +292,7 @@ Then boş alan bırakılamaz uyari yazisini görür.............................
 And kvkk butonunu işaretlemez ve uyarı yazisini görür.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Register-Login Olma" name="TC61" time="14.819">
+<testcase classname="Register-Login Olma" name="TC61" time="15.076">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then kayit ol sekmesine tiklar..............................................passed
@@ -341,7 +301,7 @@ Then şifre ve şifre tekrari birbiri ile farklı girer........................p
 And Geçersiz giriş: Parola alanları eşleşmiyor yazisini görür...............passed
 ]]></system-out>
 </testcase>
-<testcase classname="Road Map" name="TC35" time="20.489">
+<testcase classname="Road Map" name="TC35" time="20.478">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -350,7 +310,7 @@ When yol haritasi sekmesine tiklar..........................................pass
 And stage kisminda bulunan sekmeleri dogrulamasini yapar....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Road Map" name="TC36" time="33.119">
+<testcase classname="Road Map" name="TC36" time="33.263">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -359,7 +319,7 @@ When yol haritasi sekmesine tiklar..........................................pass
 And sayfayi asagi indirir ve 6 adet yol haritasi yazisi oldugunu dogrular...passed
 ]]></system-out>
 </testcase>
-<testcase classname="Hizmet Saglayıcılar" name="TC10" time="56.521">
+<testcase classname="Hizmet Saglayıcılar" name="TC10" time="56.744">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -371,7 +331,7 @@ And vidyoner isimli sirketin altında bulunan indirim al butonuna basar ve tamam
 And shıppıng garage isimli sirketin altında bulunan indirim al butonuna basar ve tamam der.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Soru Cevap Kütüphanesi" name="TC53" time="24.047">
+<testcase classname="Soru Cevap Kütüphanesi" name="TC53" time="24.019">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -381,57 +341,17 @@ And search kismina Emparazon yazar ara der..................................pass
 Then gelen sonucların emparazon ile ilgili oldugunu teyit eder..............passed
 ]]></system-out>
 </testcase>
-<testcase classname="Soru Cevap Kütüphanesi" name="TC54" time="10.134">
-<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[.='Soru-Cevap Kütüphanesi']&quot;}
-  (Session info: chrome=116.0.5845.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6034426161d086fb30a246c5d84e7883, findElement {using=xpath, value=//a[.='Soru-Cevap Kütüphanesi']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ERTURU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60349}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60349/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6034426161d086fb30a246c5d84e7883">
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[.='Soru-Cevap Kütüphanesi']"}
-  (Session info: chrome=116.0.5845.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6034426161d086fb30a246c5d84e7883, findElement {using=xpath, value=//a[.='Soru-Cevap Kütüphanesi']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ERTURU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60349}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60349/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6034426161d086fb30a246c5d84e7883
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy24.click(Unknown Source)
-	at stepdefinitions.Soru_Cevap_Kutuphane_StepDefinitions.soru_cevap_kutuphanesi_sekmesine_tiklar(Soru_Cevap_Kutuphane_StepDefinitions.java:22)
-	at ✽.Soru Cevap Kutuphanesi sekmesine tiklar(file:///C:/Users/Ertuğrul/IdeaProjects/Members_Panel/src/test/resources/features/SoruCevapKütüphanesi.feature:20)
-]]>
-</failure>
+<testcase classname="Soru Cevap Kütüphanesi" name="TC54" time="61.361">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
 And gecerli password girer..................................................passed
-And Soru Cevap Kutuphanesi sekmesine tiklar.................................failed
-And sayfayi asagi dogru indirir.............................................skipped
-Then ileri tusuna tiklar diger sayfalarin dogru acildigini teyit eder.......skipped
+And Soru Cevap Kutuphanesi sekmesine tiklar.................................passed
+And sayfayi asagi dogru indirir.............................................passed
+Then ileri tusuna tiklar diger sayfalarin dogru acildigini teyit eder.......passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC14 Trendyol Kar Hesaplama" time="86.324">
+<testcase classname="Tools Tab" name="TC14 Trendyol Kar Hesaplama" time="86.883">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -442,7 +362,7 @@ And acilan sayfada  gerekli tum bilgileri girer ve hesaplama yapar..........pass
 Then cikan hesaplama sonucunun dogru oldugunu kontrol eder..................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC15" time="43.045">
+<testcase classname="Tools Tab" name="TC15" time="42.988">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -455,7 +375,47 @@ And hesapla butonuna basar..................................................pass
 Then gelen sonuclarin dogrulamasini yapar...................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC16" time="40.976">
+<testcase classname="Tools Tab" name="TC16" time="40.623">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(.,'78.75')]&quot;}
+  (Session info: chrome=116.0.5845.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [61c099847243c983700a721dac027cf1, findElement {using=xpath, value=//p[contains(.,'78.75')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.112, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ERTURU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52703/devtoo..., se:cdpVersion: 116.0.5845.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 61c099847243c983700a721dac027cf1">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(.,'78.75')]"}
+  (Session info: chrome=116.0.5845.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [61c099847243c983700a721dac027cf1, findElement {using=xpath, value=//p[contains(.,'78.75')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.112, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ERTURU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52703/devtoo..., se:cdpVersion: 116.0.5845.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 61c099847243c983700a721dac027cf1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy25.getText(Unknown Source)
+	at stepdefinitions.Tools_Tab_Etsy_StepDefinitions.gelen_sonuclarin_dogrulamasinı_yapar(Tools_Tab_Etsy_StepDefinitions.java:95)
+	at ✽.gelen sonuclarin dogrulamasinı yapar(file:///C:/Users/Ertuğrul/IdeaProjects/Members_Panel/src/test/resources/features/Tools_Tab.feature:38)
+]]>
+</failure>
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -463,10 +423,10 @@ And gecerli password girer..................................................pass
 And araclar sekmesinde bulunan Etsy sekmesini tiklar........................passed
 And Etsy kar hesaplama secenegini tiklar....................................passed
 And acilan sayfada sadece Turkish Lira secer, satis fiyatını yazar  ve hesapla der.passed
-And gelen sonuclarin dogrulamasinı yapar....................................passed
+And gelen sonuclarin dogrulamasinı yapar....................................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC17" time="81.003">
+<testcase classname="Tools Tab" name="TC17" time="81.056">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -482,57 +442,17 @@ And hesapla butonuna tiklar.................................................pass
 And gelen sonuclarin dogrulamsını yapar.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC18" time="9.638">
-<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//nav[@class='flex-1 space-y-1 px-2 py-4']//p[contains(.,'Etsy')]&quot;}
-  (Session info: chrome=116.0.5845.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1b5c34d67fafe368d716ba5885938b94, findElement {using=xpath, value=//nav[@class='flex-1 space-y-1 px-2 py-4']//p[contains(.,'Etsy')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ERTURU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60639}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60639/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1b5c34d67fafe368d716ba5885938b94">
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//nav[@class='flex-1 space-y-1 px-2 py-4']//p[contains(.,'Etsy')]"}
-  (Session info: chrome=116.0.5845.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1b5c34d67fafe368d716ba5885938b94, findElement {using=xpath, value=//nav[@class='flex-1 space-y-1 px-2 py-4']//p[contains(.,'Etsy')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ERTURU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60639}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60639/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1b5c34d67fafe368d716ba5885938b94
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy24.click(Unknown Source)
-	at stepdefinitions.Tools_Tab_Etsy_StepDefinitions.araclar_sekmesinde_bulunan_etsy_sekmesini_tiklar(Tools_Tab_Etsy_StepDefinitions.java:32)
-	at ✽.araclar sekmesinde bulunan Etsy sekmesini tiklar(file:///C:/Users/Ertuğrul/IdeaProjects/Members_Panel/src/test/resources/features/Tools_Tab.feature:63)
-]]>
-</failure>
+<testcase classname="Tools Tab" name="TC18" time="16.3">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
 And gecerli password girer..................................................passed
-And araclar sekmesinde bulunan Etsy sekmesini tiklar........................failed
-And cok satan saticilar sekmesine tiklar....................................skipped
-And acilan sayfada ETSY ÇOK SATAN SATİCİLAR yazisinin geldigini teyit eder..skipped
+And araclar sekmesinde bulunan Etsy sekmesini tiklar........................passed
+And cok satan saticilar sekmesine tiklar....................................passed
+And acilan sayfada ETSY ÇOK SATAN SATİCİLAR yazisinin geldigini teyit eder..passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC19" time="40.493">
+<testcase classname="Tools Tab" name="TC19" time="40.255">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -544,7 +464,7 @@ And filtreleri uygula secenegine tiklar.....................................pass
 And Satın al popup geldigini teyit eder dogrular............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC20" time="66.178">
+<testcase classname="Tools Tab" name="TC20" time="64.986">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -558,7 +478,7 @@ And sayfayı asagi kaydirip paket iceriklerini okur..........................pas
 And yillik secenegine tiklar paket icerigini kontrol eder...................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC21" time="66.092">
+<testcase classname="Tools Tab" name="TC21" time="61.918">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -572,7 +492,7 @@ And yeni acilan sayfada ücretsiz üyelik butonuna tiklar.....................pa
 And yeni acilan sayfada asagi-yukari yaparak sayfayı kontrol eder...........passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC22" time="54.808">
+<testcase classname="Tools Tab" name="TC22" time="53.393">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -585,7 +505,7 @@ And Satın al popup'una tiklar...............................................pas
 And yeni acilan sayfada Ekosistem üyeliği Ekosisteme katil butonuna tiklar..passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC23" time="40.762">
+<testcase classname="Tools Tab" name="TC23" time="40.707">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -598,7 +518,7 @@ And Satın al popup'una tiklar...............................................pas
 And yeni acilan sayfada Ekosistem üyeliği Ekosisteme katil butonuna  tiklar.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC24" time="52.808">
+<testcase classname="Tools Tab" name="TC24" time="58.405">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -612,7 +532,7 @@ And sayfayı aşagı dogru kaydirir............................................p
 And sadece ilk 3 urunun bilgilerinin geldigini teyit eder ve konsola yazdirir.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC25" time="37.726">
+<testcase classname="Tools Tab" name="TC25" time="37.2">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli ücretli üyelik mail adresi girer...............................passed
@@ -623,7 +543,7 @@ Then acilan sayfayı asagi dogru indirir.....................................pas
 Then tüm saticilarin bilgilerinin göründügünü teyit eder....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC26" time="30.388">
+<testcase classname="Tools Tab" name="TC26" time="30.254">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -635,7 +555,7 @@ And sayfayi asagi dogru indirir ve sadece 3 satici bilgisinin geldigini teyit ed
 And bilgileri görünen saticiların bilgilerini yazdirir......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC27" time="47.578">
+<testcase classname="Tools Tab" name="TC27" time="47.519">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -647,7 +567,7 @@ And filtreleri uygula secenegine tiklar.....................................pass
 And sayfayi asagi indirir ve bilgilerin geldigini teyit eder................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC28" time="46.435">
+<testcase classname="Tools Tab" name="TC28" time="46.517">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli ücretli üyelik mail adresi girer...............................passed
@@ -658,7 +578,7 @@ And sayfayi asagi indirir ve tüm bilgilerin geldigini teyit eder............pas
 And ileri sekmesine basar ve satici bilgilerinin geldigini teyit eder.......passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC29" time="30.192">
+<testcase classname="Tools Tab" name="TC29" time="30.336">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -670,7 +590,7 @@ And sayfayi asagi dogru indirir ve sadece 3 satici bilgisinin geldigini  teyit e
 And bilgileri görünen saticilari konsola yazdirir...........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC30" time="36.039">
+<testcase classname="Tools Tab" name="TC30" time="36.363">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli ücretli üyelik mail adresi girer...............................passed
@@ -680,7 +600,7 @@ Then Cok Satan Urunler sekmesine tiklar.....................................pass
 And sayfayi asagi indirir ve tüm urun bilgilerinin geldigini teyit eder.....passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC31" time="30.201">
+<testcase classname="Tools Tab" name="TC31" time="32.224">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -692,7 +612,7 @@ And sayfayi asagi dogru indirir ve sadece 3 satici bilgisinin geldigini  teyit e
 And bilgileri görünen saticilari konsola  yazdirir..........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tools Tab" name="TC32" time="39.596">
+<testcase classname="Tools Tab" name="TC32" time="38.106">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli ücretli üyelik mail adresi girer...............................passed
@@ -702,7 +622,7 @@ Then Populer Urunler sekmesine tiklar.......................................pass
 And sayfayi asagi indirir ve tüm urun bilgilerinin geldigini teyit eder.....passed
 ]]></system-out>
 </testcase>
-<testcase classname="Üretici ve Toptancılar" name="TC06" time="39.943">
+<testcase classname="Üretici ve Toptancılar" name="TC06" time="40.345">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then geçerli mail bir adresi girer..........................................passed
@@ -713,7 +633,7 @@ And iletişim kur butonuna tıklar............................................pa
 And telefon numarası girer ve doğrulama kodu geldiğini teyit eder...........passed
 ]]></system-out>
 </testcase>
-<testcase classname="Üretici ve Toptancılar" name="TC07" time="38.35">
+<testcase classname="Üretici ve Toptancılar" name="TC07" time="38.558">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -724,7 +644,7 @@ Then sayfayı aşagı kaydırır tüm ürünleri görür........................
 And iletişim kur butonuna tıklar ve whatsapp'a yönlendirdiğini teyit eder...passed
 ]]></system-out>
 </testcase>
-<testcase classname="Üretici ve Toptancılar" name="TC08" time="73.703">
+<testcase classname="Üretici ve Toptancılar" name="TC08" time="73.598">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -739,7 +659,7 @@ And ikinci sayfaya gecer tüm ürünleri kontrol eder..........................p
 And ucuncu sayfaya gecer tüm urunleri kontrol eder..........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Üretici ve Toptancılar" name="TC09" time="39.444">
+<testcase classname="Üretici ve Toptancılar" name="TC09" time="39.988">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -751,7 +671,7 @@ And kayıt ol sekmesine tıklar...............................................pa
 And Kullanıcı magaza bilgileri gecersiz. Lütfen kontrol ediniz yazısını görür.passed
 ]]></system-out>
 </testcase>
-<testcase classname="integration page" name="TC33" time="16.238">
+<testcase classname="integration page" name="TC33" time="17.046">
 <system-out><![CDATA[
 Given kullanıcı members.rexven.com sayfasına gider..........................passed
 Then gecerli mail adresi girer..............................................passed
@@ -759,23 +679,23 @@ And gecerli password girer..................................................pass
 And Entegrasyon sekmesine tiklar............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="integration page" name="TC34" time="19.228">
+<testcase classname="integration page" name="TC34" time="19.158">
 <failure type="org.openqa.selenium.JavascriptException" message="javascript error: Cannot set properties of null (setting 'muted')
-  (Session info: chrome=116.0.5845.111)
+  (Session info: chrome=116.0.5845.112)
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [539416cd95fa78b194bd8675dc99a538, executeScript {script=document.querySelector('video').muted = false;, args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ERTURU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62084}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62084/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 539416cd95fa78b194bd8675dc99a538">
+Command: [07ac323d49bc454dff8d6d38fc5567b4, executeScript {script=document.querySelector('video').muted = false;, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.112, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ERTURU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54367}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54367/devtoo..., se:cdpVersion: 116.0.5845.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 07ac323d49bc454dff8d6d38fc5567b4">
 <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Cannot set properties of null (setting 'muted')
-  (Session info: chrome=116.0.5845.111)
+  (Session info: chrome=116.0.5845.112)
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [539416cd95fa78b194bd8675dc99a538, executeScript {script=document.querySelector('video').muted = false;, args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ERTURU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62084}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62084/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 539416cd95fa78b194bd8675dc99a538
+Command: [07ac323d49bc454dff8d6d38fc5567b4, executeScript {script=document.querySelector('video').muted = false;, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.112, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ERTURU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54367}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54367/devtoo..., se:cdpVersion: 116.0.5845.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 07ac323d49bc454dff8d6d38fc5567b4
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
